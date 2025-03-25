@@ -1,0 +1,2197 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="{% static 'images/fevicon.png' %} " type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Hura</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="{% static 'font-awesome.min.css' %}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'responsive.css' %}" rel="stylesheet" />
+
+</head>
+
+    <body>
+        <body class="sub_page">
+
+            <div class="hero_area">
+              <!-- header section strats -->
+              <header class="header_section">
+                <div class="container-fluid">
+                  <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="{% url "index" %} ">
+                      <span>Hura</span>
+                    </a>
+          
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class=""> </span>
+                    </button>
+          
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav  ml-auto">
+                        <li class="nav-item ">
+                          <a class="nav-link" href="{% url "index" %} ">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="{% url "about" %} "> About</a>
+                        </li>
+          
+          
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="residentialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Residential
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="residentialDropdown">
+                            <a class="dropdown-item" href="{% url "speed" %}">Speed Home Plans</a>
+                            <a class="dropdown-item" href="{% url "radio" %} ">Radio Home Plans</a>
+                           
+                          </div>
+                        </li>
+          
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="residentialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Business
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="residentialDropdown">
+                            <a class="dropdown-item" href="{% url "radio b" %} ">Radio Business Plan</a>
+                            <a class="dropdown-item" href="{% url "speed b" %} ">Speed Business Plan</a>
+                            <a class="dropdown-item" href="{% url "cloud b" %} ">Cloud Services</a>
+                            <a class="dropdown-item" href="{% url "data b" %} ">Data co-location services</a>
+                            <a class="dropdown-item" href="{% url "voip b" %} ">Voip</a>
+                          
+                          </div>
+                        </li>
+          
+                        {% comment %} <li class="nav-item">
+                          <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="price.html">Pricing</a>
+                        </li> {% endcomment %}
+                        <li class="nav-item">
+                          <a class="nav-link" href="{% url "contact" %} ">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="{% url "coverage" %} ">Coverage</a>
+                        </li>
+                      </ul>
+                      <div class="quote_btn-container">
+                        <form class="form-inline">
+                          <button class="btn   nav_search-btn" type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </button>
+                        </form>
+                        <a href="">
+                          <i class="fa fa-phone" aria-hidden="true"></i>
+                          <span>
+                            Call : +234 08030767523
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </header>
+              <!-- end header section -->
+            
+
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Unlimited Internet || Fast & Secure<br>Affordable ||
+                      Reliable
+                    </h1>
+                    <p>Hura wireless internet is your one stop turnkey solutions for your internet needs.
+                      Experience  on the connection with our state of the  customer service.
+                     </p>
+                    <div class="btn-box">
+                      <a href="{% url "about" %}" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="{% url "contact" %}" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="{% static 'images/slider-img.png' %}"  alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Unlimited Internet || Fast & Secure<br>Affordable ||
+                      Reliable
+                    </h1>
+                    <p>
+                      Experience boundless fun with the force of SpeedMax! </p>
+                    <div class="btn-box">
+                      <a href="{% url "about" %}" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="{% url "contact" %}" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="{% static 'images/slider-img.png' %}" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Unlimited Internet || Fast & Secure<br>Affordable ||
+                      Reliable
+                    </h1>
+                    <p>
+                      Feel the excitement with the unstoppable force of SpeedMax!
+                       </p>
+                    <div class="btn-box">
+                      <a href="{% url "about" %}" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="{% url "contact" %}" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="{% static 'images/slider-img.png' %}" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Unlimited Internet || Fast & Secure<br>Affordable ||
+                      Reliable
+                    </h1>
+                    <p>
+                      SpeedMax is your ultimate solution for all your connectivity needs.
+Enjoy seamless service with our cutting-edge customer support, always ready to assist you!
+                       </p>
+                    <div class="btn-box">
+                      <a href="{% url "about" %}" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="{% url "contact" %}" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="{% static 'images/slider-img.png' %}" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Unlimited Internet Service
+                    </h1>
+                    <p>
+                      With one of our Unlimited Internet plans, you can stream, browse and download to your heart’s content, and we’ll never slow you down or charge you extra. You can get unlimited internet with both our fixed wireless and our Ultra-fast Fiber Broadband. </p>
+                    <div class="btn-box">
+                      <a href="{% url "about" %}" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="{% url "contact" %}" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="{% static 'images/slider-img.png' %}" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        
+
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Unlimited Internet || Fast & Secure<br>Affordable ||
+                      Reliable
+                    </h1>
+                    <p>
+                     Give your Businesses an  Unlock endless enjoyment with the strength of SpeedMax! </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="{% static 'images/slider-img.png' %}" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Unlimited Internet || Fast & Secure<br>Affordable ||
+                      Reliable
+                    </h1>
+                    <p>
+                      Excess Speed Internet Service Built on Hura Boardband </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="{% static 'images/slider-img.png' %}" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      
+                      Connectivity Beyond Boundaries
+                    </h1>
+                    <h4>Elevate Your digital LifeStyle With<span class="txt"> Hura Unlimited Ultra Fast Internet</span></h4>
+                    {% comment %} <p>
+                      Excess Speed Internet Service Built on Hura Boardband </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div> {% endcomment %}
+                    <div class="header-txt"> 
+                      <div>
+                   
+                    <h5>
+                    <img src="{% static 'images/nav-bullet.png' %} " alt="">
+                    Ultra Fast
+                    </h5>
+
+                    <h5>
+                      <img src="{% static 'images/nav-bullet.png' %} " alt="">
+                      Zero Data-Cap
+                      </h5>
+
+                      <h5>
+                        <img src="{% static 'images/nav-bullet.png' %} " alt="">
+                        Reliable
+                        </h5>
+                        <h5>
+                          <img src="{% static 'images/nav-bullet.png' %} " alt="">
+                          Affordable
+                          </h5>
+                          <h5>
+                            <img src="{% static 'images/nav-bullet.png' %} " alt="">
+                            24X7 Support     
+                            </h5>
+                          </div>
+                            <div class="second_header">
+                              <h5>From As Low As</h5>
+                              <h4>N13,110</h4>
+                              <h4>Monthly</h4>
+                            </div>
+
+                          </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="{% static 'images/slider-img.png' %}" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="rows">
+                <div class="col-md-6s">
+                  <div class="detail-boxs">
+                    
+                    <div class="scoll_txt">
+                      <div class="main_header">
+                    <h1>
+                       Speed Home Plans
+                    </h1>
+                    <p>MORE SPEED ZERO DATA CAP
+                      </p>
+                    </div>
+                      <div class="scoll_boxs">
+                        <div class="scoll_txt">
+                        <h5>SpeedMax</h5>
+                        <p>Liteplus</p>
+                      
+                        <button class="scoll_btn">
+                          <h2 class="scoll_h1">1<span>5</span>mbps</h2>
+                          <p class="scoll_p">Price<span>N13,110</span></p>
+                        </button>
+                      </div>
+                      
+                        <div class="scoll_txt">
+                          <h5>SpeedMax</h5>
+                          <p>Home</p>
+                       
+                      
+                        <button class="scoll_btn">
+                          <h2>4<span>0</span>mbps</h2>
+                          <p>Price<span>N19,266</span></p>
+                        </button>
+                      </div>
+                      
+                      <div class="scoll_txt">
+                        <h5>SpeedMax</h5>
+                        <p>Extra</p>
+                      
+                        <button class="scoll_btn">
+                          <h2 class="scoll_h1">6<span>0</span>mbps</h2>
+                          <p class="scoll_p">Price<span>N23,940</span></p>
+                        </button>
+                      </div>
+                      
+                        <div class="scoll_txt">
+                          <h5>SpeedMax</h5>
+                          <p>Ultra</p>
+                       
+                      
+                        <button class="scoll_btn">
+                          <h2>8<span>5</span>mbps</h2>
+                          <p>Price<span>N40,641</span></p>
+                        </button>
+                      </div>
+                      <div class="scoll_txt">
+                        <h5>SpeedMax</h5>
+                        <p>Ultimate</p>
+                      
+                        <button class="scoll_btn">
+                          <h2 class="scoll_h1">12<span>5</span>mbps</h2>
+                          <p class="scoll_p">Price<span>N56,316</span></p>
+                        </button>
+                      </div>
+                      
+                        <div class="scoll_txt">
+                          <h5>SpeedMax</h5>
+                          <p>Ultimate+</p>
+                       
+                      
+                        <button class="scoll_btn">
+                          <h2>18<span>0</span>mbps</h2>
+                          <p>Price<span>N74,214</span></p>
+                        </button>
+                      </div>
+                    </div>
+                      </div>
+                    
+                    {% comment %} <div class="btn-box">
+                      <a href="" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div> {% endcomment %}
+                  </div>
+                </div>
+              
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        {% comment %} <img src="{% static 'images/slider-img.png' %}" alt=""> {% endcomment %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="rows">
+                <div class="col-md-6s">
+                  <div class="detail-boxs">
+                   <div class="scoll_txt">
+                    <h1>
+                       Speed Business Plans
+                    </h1>
+                    <p>MORE SPEED ZERO DATA CAP
+                      </p>
+                    </div>
+                      <div class="scoll_box" >
+                        <div class="scoll_txt" >
+                        <h4>SpeedMax</h4>
+                        <p>Large</p>
+                     
+                        <button class="scoll_btn">
+                          <h2 class="scoll_h1">3<span>0</span>mbps</h2>
+                          <p class="scoll_p">Price<span>N30,552</span></p>
+                        </button>
+                      </div>
+                      <div class="scoll_txt" >
+                        <h4>SpeedMax</h4>
+                        <p>Max</p>
+                     
+                        <button class="scoll_btn">
+                          <h2 class="scoll_h1">6<span>0</span>mbps</h2>
+                          <p class="scoll_p">Price<span>N49,704</span></p>
+                        </button>
+                      </div>
+
+                      <div class="scoll_txt" >
+                        <h4>SpeedMax</h4>
+                        <p>Ultra</p>
+                     
+                        <button class="scoll_btn">
+                          <h2 class="scoll_h1">9<span>5</span>mbps</h2>
+                          <p class="scoll_p">Price<span>N88,122</span></p>
+                        </button>
+                      </div>
+
+                      <div class="scoll_txt" >
+                        <h4>SpeedMax</h4>
+                        <p>Ultimate</p>
+                     
+                        <button class="scoll_btn">
+                          <h2 class="scroll_h1">12<span>0</span>mbps</h2>
+                          <p class="scroll_p">Price<span>N120,384</span></p>
+                        </button>
+                      </div>
+
+
+                      </div>
+                    {% comment %} <div class="btn-box">
+                      <a href="" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div> {% endcomment %}
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        {% comment %} <img src="{% static 'images/slider-img.png' %}" alt=""> {% endcomment %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+       
+
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="rows">
+                <div class="col-md-6s">
+                  <div class="detail-box">
+                    <div class="scoll_txt">
+                    <h1 class="hello">
+                       Radio Home Plans
+                    </h1>
+                    <p>MORE SPEED ZERO DATA CAP
+                      </p>
+                    </div>
+                      <div class="scoll_box" >
+                        <div class="scoll_txt" >
+                        <h4>AirSpeed</h4>
+                        <p>LitePlus</p>
+                     
+                        <button class="scoll_btn">
+                          <h2 class="scoll_h1"><span>5</span>mbps</h2>
+                          <p class="scoll_p">Price<span>N13,110</span></p>
+                        </button>
+                      </div>
+
+                      <div class="scoll_txt" >
+                        <h4>AirSpeed</h4>
+                        <p>Home</p>
+                     
+                        <button class="scoll_btn">
+                          <h2 class="scoll_h1">1<span>2</span>mbps</h2>
+                          <p class="scoll_p">Price<span>N19,266</span></p>
+                        </button>
+                      </div>
+
+                      <div class="scoll_txt" >
+                        <h4>AirSpeed</h4>
+                        <p>HomeExtra</p>
+                     
+                        <button class="scoll_btn">
+                          <h2 class="scoll_h1">1<span>7</span>mbps</h2>
+                          <p class="scoll_p">Price<span>N23,940</span></p>
+                        </button>
+                      </div>
+
+                     
+                      </div>
+                    {% comment %} <div class="btn-box">
+                      <a href="" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div> {% endcomment %}
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        {% comment %} <img src="{% static 'images/slider-img.png' %}" alt=""> {% endcomment %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+         
+          <div class="carousel-item">
+            <div class="container">
+              <div class="rows">
+                <div class="col-md-6s">
+                  <div class="detail-boxs">
+                    <div class="scoll_txt">
+                    <h2 class="header_h1">
+                    
+                      Radio Business Plans
+                    </h2>
+                    <p>MORE SPEED ZERO DATA CAP</p>
+                  </div>
+                    {% comment %} <p>
+                     Enjoy endless thrills with the power of SpeedMax</p> {% endcomment %}
+
+  
+
+<div class="scoll_box">
+  <div class="scoll_txt">
+  <h5>AirSpeed</h5>
+  <p>Large</p>
+
+  <button class="scoll_btn">
+    <h2 class="scoll_h1"><span>7</span>mbps</h2>
+    <p class="scoll_p">Price<span>N30,552</span></p>
+  </button>
+</div>
+
+  <div class="scoll_txt">
+    <h5>AirSpeed</h5>
+    <p>Max</p>
+ 
+
+  <button class="scoll_btn">
+    <h2>1<span>2</span>mbps</h2>
+    <p>Price<span>N49,702</span></p>
+  </button>
+</div>
+
+<div class="scoll_txt">
+  <h5>AirSpeed</h5>
+  <p>Ultra</p>
+
+  <button class="scoll_btn">
+    <h2 class="scoll_h1">1<span>7</span>mbps</h2>
+    <p class="scoll_p">Price<span>N88,122</span></p>
+  </button>
+</div>
+
+  <div class="scoll_txt">
+    <h5>AirSpeed</h5>
+    <p>Ultimate</p>
+ 
+
+  <button class="scoll_btn">
+    <h2>2<span>5</span>mbps</h2>
+    <p>Price<span>N120,384</span></p>
+  </button>
+</div>
+
+ 
+
+ 
+</div>
+    
+                     {% comment %} <div class="btn-box">
+                      <a href="" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div> {% endcomment %}
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        {% comment %} <img src="{% static 'images/slider-img.png' %}" alt=""> {% endcomment %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+     
+      
+
+
+
+
+
+       
+
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  
+
+
+
+
+
+
+  <!-- service section -->
+
+  {% comment %} <section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Services
+        </h2>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'js/custom.js' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Shared Hosting
+              </h4>
+              <p>
+                Generators on the Internet tend to repeat predefined chunks as necessary
+              </p>
+              <a href="">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s2.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Dedicated Hosting
+              </h4>
+              <p>
+                Generators on the Internet tend to repeat predefined chunks as necessary
+              </p>
+              <a href="">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s3.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Cloud Hosting
+              </h4>
+              <p>
+                Generators on the Internet tend to repeat predefined chunks as necessary
+              </p>
+              <a href="">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s4.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                VPS Hosting
+              </h4>
+              <p>
+                Generators on the Internet tend to repeat predefined chunks as necessary
+              </p>
+              <a href="">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s5.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Wordpress Hosting
+              </h4>
+              <p>
+                Generators on the Internet tend to repeat predefined chunks as necessary
+              </p>
+              <a href="">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s6.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Domain Name
+              </h4>
+              <p>
+                Generators on the Internet tend to repeat predefined chunks as necessary
+              </p>
+              <a href="">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> {% endcomment %}
+
+  <!-- end service section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Us
+              </h2>
+            </div>
+            <p>
+              Hura Internet Broadband is your trusted partner for fast, reliable, and seamless internet connectivity. With cutting-edge technology and a commitment to customer satisfaction, Hura delivers a robust broadband experience that meets all your digital needs. </p>
+              <p>Whether you're working, streaming, gaming, or simply browsing, Hura Internet ensures a smooth and uninterrupted connection. Their broadband plans are designed to offer high-speed internet with..</p>
+            <a href="{% url "about" %}">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.png' %}" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- server section -->
+
+
+  <section class="server_section">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{% static 'images/server-img.jpg' %}" alt="">
+            <div class="play_btn">
+              <button>
+                <i class="fa fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Let Us Manage Your Network with Hura Network
+              </h2>
+              <p>
+               At Hura Network, we offer expert network management services designed to keep your systems running smoothly and securely.  {% comment %} With our team of skilled professionals, we provide 24/7 monitoring, proactive management, and tailored solutions to meet your unique needs. {% endcomment %}
+
+                From network performance optimization to robust security measures, we ensure your network stays secure, efficient, and scalable as your business grows. Let us handle the technical aspects so you can focus on what matters most—growing your business.
+              </p>
+              <p>Contact Hura Network today to manage your network seamlessly!
+
+
+
+              </p>
+            </div>
+            <a href="{% url "contact" %}">
+              Sign up
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end server section -->
+
+  <!-- price section -->
+
+  <section class="price_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+         Hura Home Plans
+        </h2>
+      </div>
+      <div class="price_container ">
+        <div class="box">
+          <div class="detail-box">
+            <h1>SpeedMax <span>Liteplus</span></h1>
+            <h2>₦13,110 /month</h2>
+            <h6>
+              Startup
+            </h6>
+            <ul class="price_features">
+              <li>
+                2GB RAM
+              </li>
+              <li>
+                20GB SSD Cloud Storage
+              </li>
+              <li>
+                Weekly Backups
+              </li>
+              <li>
+                DDoS Protection
+              </li>
+              <li>
+                Full Root Access
+              </li>
+              <li>
+                24/7/365 Tech Support
+              </li>
+            </ul>
+          </div>
+          <div class="btn-box">
+            <a href="{% url "contact" %}">
+              Sign up
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="detail-box">
+            <h1>
+              SpeedMax
+              <span>Home</span></h1>
+            <h2>₦19,266 /month</h2>
+            <h6>
+              Standard
+            </h6>
+            <ul class="price_features">
+              <li>
+                4GB RAM
+              </li>
+              <li>
+                50GB SSD Cloud Storage
+              </li>
+              <li>
+                Weekly Backups
+              </li>
+              <li>
+                DDoS Protection
+              </li>
+              <li>
+                Full Root Access
+              </li>
+              <li>
+                24/7/365 Tech Support
+              </li>
+            </ul>
+          </div>
+          <div class="btn-box">
+            <a href="{% url "contact" %}">
+              Sign up
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="detail-box">
+            <h1>SpeedMax <span> Extra</span> </h1>
+            <h2>₦23,940 /month</h2>
+            <h6>
+              Business
+            </h6>
+            <ul class="price_features">
+              <li>
+                8GB RAM
+              </li>
+              <li>
+                100GB SSD Cloud Storage
+              </li>
+              <li>
+                Weekly Backups
+              </li>
+              <li>
+                DDoS Protection
+              </li>
+              <li>
+                Full Root Access
+              </li>
+              <li>
+                24/7/365 Tech Support
+              </li>
+            </ul>
+          </div>
+          <div class="btn-box">
+            <a href="{% url "contact" %}">
+              Sign up
+            </a>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+    <a href="{% url "speed" %}">
+      <button class="home_btn">SEE MORE PLANS</button>  
+    </a>  
+  </section>
+
+
+  <section class="price_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+         Hura Business Plans
+        </h2>
+      </div>
+      <div class="price_container ">
+        <div class="box">
+          <div class="detail-box">
+            <h1> SpeedMax <span>Large</span> </h1>
+            <h2>₦30,552 /month
+
+            </h2>
+            <h6>
+              Startup
+            </h6>
+            <ul class="price_features">
+              <li>
+                2GB RAM
+              </li>
+              <li>
+                20GB SSD Cloud Storage
+              </li>
+              <li>
+                Weekly Backups
+              </li>
+              <li>
+                DDoS Protection
+              </li>
+              <li>
+                Full Root Access
+              </li>
+              <li>
+                24/7/365 Tech Support
+              </li>
+            </ul>
+          </div>
+          <div class="btn-box">
+            <a href="{% url "contact" %}">
+              Sign up
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="detail-box">
+            <h1> SpeedMax <span>Max</span> </h1>
+            <h2>₦49,704 /month</h2>
+            <h6>
+              Standard
+            </h6>
+            <ul class="price_features">
+              <li>
+                4GB RAM
+              </li>
+              <li>
+                50GB SSD Cloud Storage
+              </li>
+              <li>
+                Weekly Backups
+              </li>
+              <li>
+                DDoS Protection
+              </li>
+              <li>
+                Full Root Access
+              </li>
+              <li>
+                24/7/365 Tech Support
+              </li>
+            </ul>
+          </div>
+          <div class="btn-box">
+            <a href="{% url "contact" %}">
+              Sign up
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="detail-box">
+            <h1>SpeedMax <span>Ultra</span> </h1>
+            <h2>₦88,122 /month</h2>
+            <h6>
+              Business
+            </h6>
+            <ul class="price_features">
+              <li>
+                8GB RAM
+              </li>
+              <li>
+                100GB SSD Cloud Storage
+              </li>
+              <li>
+                Weekly Backups
+              </li>
+              <li>
+                DDoS Protection
+              </li>
+              <li>
+                Full Root Access
+              </li>
+              <li>
+                24/7/365 Tech Support
+              </li>
+            </ul>
+          </div>
+          <div class="btn-box">
+            <a href="{% url "contact" %}">
+              Sign up
+            </a>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+ 
+    </div>
+
+
+  </section>
+  
+
+  <div class="speed-txt">
+    <a href="{% url "speed b" %}">
+        <button class="home_btn">SEE MORE PLANS</button>  
+      </a>
+    </div>  
+
+  <!-- price section -->
+
+  <!-- client section -->
+  <section class="client_section ">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Testimonial
+        </h2>
+        <p>
+          
+        </p>
+      </div>
+    </div>
+    <div class="container px-0">
+      <div id="customCarousel2" class="carousel  slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/client.jpg' %} " alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                     
+                      <h4> Ukpono </h4> 
+                        <p>
+                        Experience with Hura Networks has been stellar! Reliable Internet service with professional and responsive support. Highly recommended to any serious business entity within Nigeria!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/4.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                  
+                       <h4>Mr Peter</h4> 
+                        <p>
+                        My family and I are enjoying your network so much, especially my wife who work from home.
+                        
+                      Thanks for the good  work of Hura
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/3.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                    
+                        <h4>Kingley</h4>
+                        <p>
+                        My internet is working perfectly. Thank you for the swift responses. Love the energy.
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/2.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                    
+                       <h4> Mr Solo</h4>
+                        <p>
+                        Thank your for the swift response to my issues, my Internet now works well,
+                        it has been the best ever.
+                         
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/1.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                     
+                       
+                       <h4>Miss Bassey</h4> 
+                        <p>
+                        You guys are actually the best damn. I am glad to know your team.
+                        Keep it up
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/22.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                     
+                       <h4>Miss Ekom-Obong</h4>
+                        <p>
+                        I will like to state that the Hura Internet Service has been fantastic. The best i have used till date. Thanks and keep it up.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/6.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                     
+                      <h4></h4>  
+                        <p>
+                          "I just have to say, Hura Internet Service has been nothing short of amazing. By far the best I’ve experienced. Thank you for the fast responses and great service. Keep up the excellent work!"
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/7.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+
+                        I’ve been using Hura Networks for my business, and I couldn’t be more satisfied. The service is stable, fast, and their customer support is always professional. Definitely recommend for businesses looking for top-tier internet in Nigeria.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/8.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                     
+                       <h4>miss Comfort</h4> 
+                        <p>
+                          "Hura Internet has been outstanding! It’s the best service I’ve used so far. Everything is running smoothly, and I appreciate the quick support. Keep up the great work!"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/5.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      
+                        <h4>Mr Benson</h4>
+                        <p>
+                          One of the best Internet Service Providers, I’ve ever had a chance of working it.
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/10.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      
+                        <h4></h4>
+                        <p>
+                          "I’m really impressed with Hura Internet Service—it's the best I’ve had to date. The connection is solid, and support is quick and efficient. Thank you for the great service!"
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/20.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      
+                        <h4></h4>
+                        <p>
+                          Hura Networks has provided the best internet experience I’ve had so far. The service is reliable, and support is always quick. Thanks for the fantastic service, and keep it up!
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/12.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      
+                        <h4></h4>
+                        <p>
+                          I’ve been using Hura Internet for a while now, and it’s by far the best I’ve had. Everything works perfectly, and the support team is fast and responsive. Great job.
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/13.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      
+                        <h4>Jewiesh</h4>
+                        <p>
+                          The Hura Internet Service has truly exceeded my expectations. It’s the best I’ve had, and I’m impressed with the quick response time. Thanks for such great service!
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/14.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      
+                        <h4>Mr Akan</h4>
+                        <p>
+                          I’ve tried several providers, but none compare to the reliability and speed I get with Hura. The support team is always responsive and helpful. Keep up the excellent work!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/15.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      
+                        <h4></h4>
+                        <p>
+                          I’ve been enjoying the best internet experience with Hura Networks. Everything works seamlessly, and their customer support is second to none. Thank you for the amazing service
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/16.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      
+                        <h4></h4>
+                        <p>
+                          I am extremely happy with Hura Internet Service! It’s the best I’ve used so far. The internet is fast, stable, and the support team always responds quickly. Kudos to the team for such outstanding service!
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/17.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      
+                        <h4></h4>
+                        <p>
+                          I can't recommend Hura Internet enough! It’s the best I’ve experienced, and everything works flawlessly. I appreciate the swift customer support as well. Keep doing a fantastic job!
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/18.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      
+                        <h4></h4>
+                        <p>
+                          Hura Internet has been fantastic! The speed, stability, and customer support are exceptional. It’s by far the best internet service I’ve used. Thanks for the amazing experience!"
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/19.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      
+                        <h4>ISAIAH</h4>
+                        <p>
+                          Simply put, Hura Internet Service is the best I’ve ever had. It’s reliable, fast, and the support is quick to resolve any issues. Thanks for such an excellent service, and keep up the great work
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/10.jpg'   %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                       
+                        My experience with Hura Networks has been exceptional! They provide fast, reliable internet service coupled with top-notch customer support. Always professional and quick to respond, making it a perfect choice for businesses in Nigeria. I highly recommend them!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="{% static 'images/21.jpg' %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            What our Customers Say
+                          </h5>
+                          <h6>
+                            Customer
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                    
+                        
+                       Miss Emerald
+                        
+                       Hura Networks has been a game-changer for our business. We can always count on them for reliable internet and excellent customer service. A trustworthy option for businesses in Nigeria.
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end client section -->
+
+ 
+  <!-- end contact section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location:
+                </span>
+              
+              </a>
+              <span>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                56 okporo street port Harcourt-River state
+              </span>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call : +234 08030767523
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  hurawireless@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="" href="{% url "index" %} ">
+                <img src="{% static 'images/nav-bullet.png' %}"  alt="">
+                Home
+              </a>
+              <a class="active" href="{% url "about" %} ">
+                <img src="{% static 'images/nav-bullet.png' %}" alt="">
+                About
+              </a>
+            
+              <a class="" href="{% url "radio" %}">
+                <img src="{% static 'images/nav-bullet.png' %} " alt="">
+                Residential
+              </a>
+
+              <a class="" href="radio b">
+                <img src="{% static 'images/nav-bullet.png' %} " alt="">
+                Business
+              </a>
+
+              <a class="" href="{% url "contact" %} ">
+                <img src="{% static 'images/nav-bullet.png' %}"  alt="">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              WE Got You covered!
+            </h4>
+            <p>
+              Worry not if anything goes wrong with your Hura service, We’ll sort it out no charge. This excludes misuse & mistreatment- so try not to use your Hura router as a coaster.
+
+
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-0">
+          <h4>
+            Subscribe
+          </h4>
+          <form id="subscribeForm">
+            <input type="text" placeholder="Enter email" id="email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        Ukpono Andem
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <!-- bootstrap js -->
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <!-- custom js -->
+  <script src="{% static 'js/custom.js' %}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,545 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="{% static 'images/fevicon.png' %} " type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Hura</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="{% static 'font-awesome.min.css' %}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'responsive.css' %}" rel="stylesheet" />
+
+</head>
+
+    <body>
+        <body class="sub_page">
+
+            <div class="hero_area">
+              <!-- header section strats -->
+              <header class="header_section">
+                <div class="container-fluid">
+                  <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="{% url "index" %} ">
+                      <span>Hura</span>
+                    </a>
+          
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class=""> </span>
+                    </button>
+          
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav  ml-auto">
+                        <li class="nav-item ">
+                          <a class="nav-link" href="{% url "index" %} ">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="{% url "about" %} "> About</a>
+                        </li>
+          
+          
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="residentialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Residential
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="residentialDropdown">
+                            <a class="dropdown-item" href="{% url "speed" %}">Speed Home Plans</a>
+                            <a class="dropdown-item" href="{% url "radio" %} ">Radio Home Plans</a>
+                           
+                          </div>
+                        </li>
+          
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="residentialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Business
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="residentialDropdown">
+                            <a class="dropdown-item" href="{% url "radio b" %} ">Radio Business Plan</a>
+                            <a class="dropdown-item" href="{% url "speed b" %} ">Speed Business Plan</a>
+                            <a class="dropdown-item" href="{% url "cloud b" %} ">Cloud Services</a>
+                            <a class="dropdown-item" href="{% url "data b" %} ">Data co-location services</a>
+                            <a class="dropdown-item" href="{% url "voip b" %} ">Voip</a>
+                          
+                          </div>
+                        </li>
+          
+                        {% comment %} <li class="nav-item">
+                          <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="price.html">Pricing</a>
+                        </li> {% endcomment %}
+                        <li class="nav-item">
+                          <a class="nav-link" href="{% url "contact" %} ">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="{% url "coverage" %} ">Coverage</a>
+                        </li>
+                      </ul>
+                      <div class="quote_btn-container">
+                        <form class="form-inline">
+                          <button class="btn   nav_search-btn" type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </button>
+                        </form>
+                        <a href="">
+                          <i class="fa fa-phone" aria-hidden="true"></i>
+                          <span>
+                            Call : +234 08030767523
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </header>
+              <!-- end header section -->
+            </div>
+
+
+
+            <div class="background-con">
+                <h1 class="overs">Data Co-Location Service</h1>
+                
+            </div>
+
+<section>
+    <div class="data_text">
+        <h1>Overview</h1>
+        <p>Adopting a data collocation strategy can significantly benefit your business, but selecting the right partner is key.</p>
+        <p>Hura's data collocation services enable you to securely host your IT infrastructure off-site in our state-of-the-art data centre, engineered for maximum uptime. By partnering with us, you can lower the capital and operational costs associated with housing and safeguarding your critical applications and systems.</p>
+    <p>We provide industry-leading Service Level Agreements (SLAs) that ensure reliability for power and environmental systems. Our redundant subsystems are designed to eliminate single points of failure, offering peace of mind and uninterrupted service. Hura's scalable collocation services allow you to adjust space, power, connectivity, and other services to match your evolving business needs.</p>
+    <p>Empower your business to streamline operations with Hura’s secure, flexible, and scalable data collocation services. We offer a variety of full-cabinet and multi-cabinet options to suit your enterprise's needs. Instead of dedicating resources to build and maintain your own data centre, let Hura provide the capacity and scalability you need as your business grows.</p>
+    </div>
+</section>
+
+
+<section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+       
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            {% comment %} <div class="img-box">
+              <img src="{% static 'images/s1.png' %} " alt="">
+            </div> {% endcomment %}
+            <div class="detail-box">
+              <h4>
+                Cost-Effective Solutions
+              </h4>
+              <p>
+                Building and maintaining your own data centre is expensive and resource-intensive. By choosing Hura, you can eliminate the need for large capital expenditures and ongoing operational costs. Our collocation services allow you to optimize your resources and redirect funds to other critical areas of your business while we handle the technical infrastructure.
+              </p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            {% comment %} <div class="img-box">
+              <img src="{% static 'images/s2.png' %}" alt="">
+            </div> {% endcomment %}
+            <div class="detail-box">
+              <h4>
+                Reliability and Uptime
+              </h4>
+              <p>
+                Our data centres are designed to be always-on, with high availability and robust infrastructure that guarantees minimal downtime. We understand that your business depends on the constant availability of critical systems and data, which is why we prioritize reliability with industry-leading Service Level Agreements (SLAs).
+              </p>
+              
+            
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ">
+          <div class="box ">
+            {% comment %} <div class="img-box">
+              <img src="{% static 'images/s3.png' %}" alt="">
+            </div> {% endcomment %}
+            <div class="detail-box">
+              <h4>
+                Scalability to Grow with You
+              </h4>
+              <p>
+                As your business evolves, so do your IT requirements. Hura offers flexible and scalable collocation services that can easily grow with your business. Whether you need to expand space, power, or connectivity, our solutions are built to adapt as your needs change, helping you avoid costly upgrades in the future.
+              </p>
+              
+      
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            {% comment %} <div class="img-box">
+              <img src="{% static 'images/s4.png' %}" alt="">
+            </div> {% endcomment %}
+            <div class="detail-box">
+              <h4>
+                Expert Support and Management
+              </h4>
+              <p>
+                With Hura, you’re not just getting space and power—you’re gaining a team of experts. Our experienced staff is available around the clock to ensure your IT environment is running smoothly. Whether you need assistance with system management or emergency support, Hura is committed to providing exceptional customer service and expert guidance.
+              </p>
+              
+            
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            {% comment %} <div class="img-box">
+              <img src="{% static 'images/s5.png' %} " alt="">
+            </div> {% endcomment %}
+            <div class="detail-box">
+              <h4>
+                Sustainability
+              </h4>
+              <p>
+                Hura’s data centres are designed with sustainability in mind. We implement energy-efficient technologies and environmentally responsible practices to minimize our carbon footprint. When you choose Hura, you’re also making a choice for a greener future.
+              </p>
+              
+           
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            {% comment %} <div class="img-box">
+              <img src="{% static 'images/s6.png' %} " alt="">
+            </div> {% endcomment %}
+            <div class="detail-box">
+              <h4>
+                Top-Tier Security
+              </h4>
+              <p>
+                Security is paramount at Hura. Our data centres are equipped with advanced physical and cybersecurity measures to ensure that your data is always protected. From biometric access controls to 24/7 monitoring and strict environmental controls, we go above and beyond to safeguard your mission-critical systems.
+              </p>
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="box ">
+              {% comment %} <div class="img-box">
+                <img src="{% static 'images/s4.png' %}" alt="">
+              </div> {% endcomment %}
+              <div class="detail-box">
+                <h4>
+                    Advanced Infrastructure
+                </h4>
+                <p>
+                    Our data centres are built with cutting-edge infrastructure, including redundant power supplies, cooling systems, and high-speed connectivity. This ensures that your applications and systems operate at peak performance with no interruptions.
+                </p>
+                
+              
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4">
+            <div class="box ">
+              {% comment %} <div class="img-box">
+                <img src="{% static 'images/s4.png' %}" alt="">
+              </div> {% endcomment %}
+              <div class="detail-box">
+                <h4>
+                    Geographic Diversity
+                </h4>
+                <p>
+                    Hura offers multiple data centre locations, providing you with geographic redundancy and the flexibility to choose the best option for your business needs. Whether you need regional or global coverage, we’ve got you covered.
+                </p>
+                
+              
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4">
+            <div class="box ">
+              {% comment %} <div class="img-box">
+                <img src="{% static 'images/s4.png' %}" alt="">
+              </div> {% endcomment %}
+              <div class="detail-box">
+                <h4>
+                Who To Choose
+                </h4>
+                <p>
+                    Choosing Hura for your data collocation needs ensures that you can focus on growing your business while we take care of the critical IT infrastructure that keeps your operations running smoothly. With Hura, your data is in trusted hands.
+                </p>
+                
+              
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="price_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+         Feautres
+        </h2>
+      </div>
+      <div class="price_container ">
+        <div class="box">
+          <div class="detail-box">
+            <div class="head">
+                <h2> Facilities Infrastructure:</h2>
+            {% comment %} <button><h5>Up to 15mb</h5></button> {% endcomment %}
+            {% comment %} <h4>₦13,110 /month</h4> {% endcomment %}
+          </div>
+            {% comment %} <h6>
+              Startup
+            </h6> {% endcomment %}
+            <ul class="price_features">
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <span>
+                      Racks
+                  </span>
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Power availability
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Email/SMS Alert
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  VPN Connectivity 
+                </li>
+  
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Internet Connectivity
+                </li>
+               
+                
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                 Security
+                </li>
+               
+              </ul>
+            {% comment %} <div class="btn-box">
+              <a href="">
+                See Detail
+              </a>
+            </div> {% endcomment %}
+          </div>
+          </div>
+        
+       
+
+
+        <div class="box">
+          <div class="detail-box">
+            <div class="head">
+                <h2> Collocation Cabinets:</h2>
+              {% comment %} <button><h5>Up to 15mb</h5></button> {% endcomment %}
+              {% comment %} <h4>₦23,940 /month</h4> {% endcomment %}
+            </div>
+            {% comment %} <h6>
+              Standard
+            </h6> {% endcomment %}
+            <ul class="price_features">
+              <li>
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <span>
+                    Available in 42U Rack Space
+                </span>
+              </li>
+              <li>
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                ¼ Rack Space
+              </li>
+              <li>
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                Half Module Rack Space.
+
+              </li>
+           
+             
+            </ul>
+            {% comment %} <div class="btn-box">
+              <a href="">
+                See Detail
+              </a>
+            </div> {% endcomment %}
+          </div>
+         
+        </div>
+
+  
+         
+ 
+         
+        </div>
+    </div>
+  </section>
+
+
+
+
+            
+            <section class="info_section layout_padding2">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="info_contact">
+                        <h4>
+                          Address
+                        </h4>
+                        <div class="contact_link_box">
+                          <a href="">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span>
+                              Location:
+                            </span>
+                          
+                          </a>
+                          <span>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            56 okporo street port Harcourt-River state
+                          </span>
+                          <a href="">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>
+                              Call : +234 08030767523
+                            </span>
+                          </a>
+                          <a href="">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>
+                              hurawireless@gmail.com
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="info_social">
+                        <a href="">
+                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                          <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                          <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="info_link_box">
+                        <h4>
+                          Links
+                        </h4>
+                        <div class="info_links">
+                          <a class="" href="{% url "index" %} ">
+                            <img src="{% static 'images/nav-bullet.png' %}"  alt="">
+                            Home
+                          </a>
+                          <a class="active" href="{% url "about" %} ">
+                            <img src="{% static 'images/nav-bullet.png' %}" alt="">
+                            About
+                          </a>
+                        
+                          <a class="" href="{% url "radio" %}">
+                            <img src="{% static 'images/nav-bullet.png' %} " alt="">
+                            Residential
+                          </a>
+            
+                          <a class="" href="radio b">
+                            <img src="{% static 'images/nav-bullet.png' %} " alt="">
+                            Business
+                          </a>
+            
+                          <a class="" href="{% url "contact" %} ">
+                            <img src="{% static 'images/nav-bullet.png' %}"  alt="">
+                            Contact Us
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="info_detail">
+                        <h4>
+                          Info
+                        </h4>
+                        <p>
+                          necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-0">
+                      <h4>
+                        Subscribe
+                      </h4>
+                      <form id="subscribeForm">
+                        <input type="text" placeholder="Enter email" id="email" />
+                        <button type="submit">
+                          Subscribe
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        
+         <!-- footer section -->
+         <footer class="footer_section">
+            <div class="container">
+              <p>
+                &copy; <span id="displayYear"></span> All Rights Reserved By
+                <a href="https://html.design/">Ukpono Andem</a>
+              </p>
+            </div>
+          </footer>
+          <!-- footer section --> 
+        
+      <!-- jQery -->
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <!-- bootstrap js -->
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <!-- custom js -->
+  <script src="{% static 'js/custom.js' %}"></script>
+    </body>
+</html>
