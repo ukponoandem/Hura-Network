@@ -37,7 +37,7 @@
     <body>
         <body class="sub_page">
 
-            <div class="hero_area">
+            <div class="hero">
               <!-- header section strats -->
               <header class="header_section">
                 <div class="container-fluid">
@@ -60,12 +60,12 @@
                         </li>
           
           
-                        <li class="nav-item dropdown">
+                        {% comment %} <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="residentialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Residential
                           </a>
                           <div class="dropdown-menu" aria-labelledby="residentialDropdown">
-                            <a class="dropdown-item" href="{% url "speed" %}">Speed Home Plans</a>
+                            <a class="dropdown-item" href="{% url "speed" %}">Fibre Home Plans</a>
                             <a class="dropdown-item" href="{% url "radio" %} ">Radio Home Plans</a>
                            
                           </div>
@@ -84,18 +84,27 @@
                           
                           </div>
                         </li>
-          
+           {% endcomment %}
                         {% comment %} <li class="nav-item">
                           <a class="nav-link" href="service.html">Services</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="price.html">Pricing</a>
                         </li> {% endcomment %}
+
+                        <li class="nav-item active">
+                          <a class="nav-link" href="{% url "speed" %}"> Residential</a>
+                        </li>
+
+                        <li class="nav-item active">
+                          <a class="nav-link" href="{% url "radio b" %} ">  Business</a>
+                        </li>
+
                         <li class="nav-item">
                           <a class="nav-link" href="{% url "contact" %} ">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="{% url "coverage" %} ">Coverage</a>
+                          {% comment %} <a class="nav-link" href="{% url "coverage" %} ">Coverage</a> {% endcomment %}
                         </li>
                       </ul>
                       <div class="quote_btn-container">
@@ -107,7 +116,7 @@
                         <a href="">
                           <i class="fa fa-phone" aria-hidden="true"></i>
                           <span>
-                            Call : +01 123455678990
+                            Call : +234 08030767523
                           </span>
                         </a>
                       </div>
@@ -116,11 +125,12 @@
                 </div>
               </header>
               <!-- end header section -->
+              <!-- end header section -->
             </div>
 
 
             <div class="background-container">
-                <h1 class="overlay-text">Speed Home Plans</h1>
+                <h1 class="overlay-text"> Home Plans</h1>
                 
             </div>
 
@@ -132,13 +142,13 @@
                    
                   </h2>
                 </div>
-                <div class="price_container ">
-                  <div class="box">
+                 <div class="price_container ">
+                  {% comment %} <div class="box">
                     <div class="detail-box">
                       <div class="head">
-                      <h5>SpeedMax <span>Essence</span></h5>
+                      <h5>SpeedMax <span>Essence</span></h5> {% endcomment %}
                       {% comment %} <button><h5>Up to 15mb</h5></button> {% endcomment %}
-                      <h4>₦13,110 /month</h4>
+                      {% comment %} <h4>₦13,110 /month</h4>
                     </div>
                       <h6>
                         Startup
@@ -171,174 +181,177 @@
                         </a>
                       </div>
                     </div>
-                    </div>
-                  
-                  <div class="box">
-                    <div class="detail-box">
-                      <div class="head">
-                        <h5>SpeedMax <span>Gold</span></h5>
-                        {% comment %} <button><h5>Up to 15mb</h5></button> {% endcomment %}
-                        <h4>₦19,266 /month</h4>
+                    </div> {% endcomment %}
+                   
+                    <div class="box">
+                      <div class="detail-box">
+                        <h3>Fiber <span>Essence</span></h3>
+                        <h4 class="clos">Up to 12mbps.</h4>
+                        <div>
+                         <h4 class="colls">
+                          Features included:
+                        </h4> 
                       </div>
-                      <h6>
-                        Standard
-                      </h6>
-                      <ul class="price_features">
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          <span>
-                            Unlimited Download
-                          </span>
-                        </li>
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          Unlimited Upload
-                        </li>
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          Unlimited streaming
-                        </li>
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          Unlimited Gaming
-                        </li>
-                       
-                      </ul>
+                        <ul class="price_features">
+                            <li>
+                              <i class="fa fa-check-circle" aria-hidden="true"></i>
+                              <span>
+                                Unlimited Download
+                              </span>
+                            </li>
+                            <li>
+                              <i class="fa fa-check-circle" aria-hidden="true"></i>
+                              Unlimited Upload
+                            </li>
+                            <li>
+                              <i class="fa fa-check-circle" aria-hidden="true"></i>
+                              Unlimited streaming
+                            </li>
+                            <li>
+                              <i class="fa fa-check-circle" aria-hidden="true"></i>
+                              Unlimited Gaming
+                            </li>
+                           
+                          </ul>
+            
+                          <h4 class="clos">Starting from  ₦13,800/month</h4>
+                      </div>
                       <div class="btn-box">
                         <a href="{% url "contact" %}">
-                          Sign Up
+                        Register Now
                         </a>
                       </div>
                     </div>
-                   
-                  </div>
 
 
-                  <div class="box">
-                    <div class="detail-box">
-                      <div class="head">
-                        <h5>SpeedMax <span>Premium</span></h5>
-                        {% comment %} <button><h5>Up to 15mb</h5></button> {% endcomment %}
-                        <h4>₦23,940 /month</h4>
+                    <div class="box">
+                      <div class="detail-box">
+                        <h3>Fiber <span>  Junna</span></h3>
+                        <h4 class="clos">Up to 18mbps.</h4>
+                        <div>
+                         <h4 class="colls">
+                          Features included:
+                        </h4> 
                       </div>
-                      <h6>
-                        Standard
-                      </h6>
-                      <ul class="price_features">
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          <span>
-                            Unlimited Download
-                          </span>
-                        </li>
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          Unlimited Upload
-                        </li>
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          Unlimited streaming
-                        </li>
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          Unlimited Gaming
-                        </li>
-                       
-                      </ul>
+                        <ul class="price_features">
+                            <li>
+                              <i class="fa fa-check-circle" aria-hidden="true"></i>
+                              <span>
+                                Unlimited Download
+                              </span>
+                            </li>
+                            <li>
+                              <i class="fa fa-check-circle" aria-hidden="true"></i>
+                              Unlimited Upload
+                            </li>
+                            <li>
+                              <i class="fa fa-check-circle" aria-hidden="true"></i>
+                              Unlimited streaming
+                            </li>
+                            <li>
+                              <i class="fa fa-check-circle" aria-hidden="true"></i>
+                              Unlimited Gaming
+                            </li>
+                           
+                          </ul>
+            
+                          <h4 class="clos">Starting from  ₦20,500/month</h4>
+                      </div>
                       <div class="btn-box">
                         <a href="{% url "contact" %}">
-                          Sign Up
+                        Register Now
                         </a>
                       </div>
                     </div>
-                   
-                  </div>
 
-                   <div class="box">
-                    <div class="detail-box">
-                      <div class="head">
-                        <h5>SpeedMax <span> Ultra</span></h5>
-                        {% comment %} <button><h5>Up to 15mb</h5></button> {% endcomment %}
-                        <h4>₦40,641 /month</h4>
+                    <div class="box">
+                      <div class="detail-box">
+                        <h3>Fiber <span>Stara</span></h3>
+                        <h4 class="clos">Up to 35mbps.</h4>
+                        <div>
+                         <h4 class="colls">
+                          Features included:
+                        </h4> 
                       </div>
-                      <h6>
-                        Standard
-                      </h6>
-                      <ul class="price_features">
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          <span>
-                            Unlimited Download
-                          </span>
-                        </li>
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          Unlimited Upload
-                        </li>
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          Unlimited streaming
-                        </li>
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          Unlimited Gaming
-                        </li>
-                       
-                      </ul>
+                        <ul class="price_features">
+                            <li>
+                              <i class="fa fa-check-circle" aria-hidden="true"></i>
+                              <span>
+                                Unlimited Download
+                              </span>
+                            </li>
+                            <li>
+                              <i class="fa fa-check-circle" aria-hidden="true"></i>
+                              Unlimited Upload
+                            </li>
+                            <li>
+                              <i class="fa fa-check-circle" aria-hidden="true"></i>
+                              Unlimited streaming
+                            </li>
+                            <li>
+                              <i class="fa fa-check-circle" aria-hidden="true"></i>
+                              Unlimited Gaming
+                            </li>
+                           
+                          </ul>
+            
+                          <h4 class="clos">Starting from  ₦35,000/month</h4>
+                      </div>
                       <div class="btn-box">
                         <a href="{% url "contact" %}">
-                          Sign Up
+                        Register Now
                         </a>
                       </div>
                     </div>
-                   
-                  </div>
-                  <div class="box">
-                    <div class="detail-box">
-                      <div class="head">
-                        <h5> <span>Ultimate</span></h5>
-                        {% comment %} <button><h5>Up to 15mb</h5></button> {% endcomment %}
-                        <h4>₦56,316 /month</h4>
-                      </div>
-                      <h6>
-                        Standard
-                      </h6>
-                      <ul class="price_features">
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          <span>
-                            Unlimited Download
-                          </span>
-                        </li>
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          Unlimited Upload
-                        </li>
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          Unlimited streaming
-                        </li>
-                        <li>
-                          <i class="fa fa-check-circle" aria-hidden="true"></i>
-                          Unlimited Gaming
-                        </li>
-                       
-                      </ul>
-                      <div class="btn-box">
-                        <a href="{% url "contact" %}">
-                          Sign Up
-                        </a>
-                      </div>
-                    </div>
-                   
-                  </div>
+
+
 
                   <div class="box">
+          <div class="detail-box">
+            <h3>Fiber <span>Pluta</span></h3>
+            <h4 class="clos">Up to 50mbps.</h4>
+            <div>
+             <h4 class="colls">
+              Features included:
+            </h4> 
+          </div>
+            <ul class="price_features">
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <span>
+                    Unlimited Download
+                  </span>
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited Upload
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited streaming
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited Gaming
+                </li>
+               
+              </ul>
+
+              <h4 class="clos">Starting from  ₦45,000/month</h4>
+          </div>
+          <div class="btn-box">
+            <a href="{% url "contact" %}">
+            Register Now
+            </a>
+          </div>
+        </div>
+
+                  {% comment %} <div class="box">
                     <div class="detail-box">
                       <div class="head">
                         <h5>SpeedMax <span>Ultimate+</span></h5>
                         {% comment %} <button><h5>Up to 15mb</h5></button> {% endcomment %}
-                        <h4>₦74,214 /month
+                        {% comment %} <h4>₦74,214 /month
 
                         </h4>
                       </div>
@@ -373,244 +386,140 @@
                       </div>
                     </div>
                    
-                  </div>
-              </div>
+                  </div> {% endcomment %}
+              </div> 
             </section>
 
-            
-            {% comment %} <section class="price_section layout_padding">
-              <div class="container">
-                <div class="heading_container heading_center">
-                 
-                </div>
-                <div class="price_container ">
-                  <div class="box">
-                    <div class="detail-box">
-                      <h1>SpeedMax <span>Liteplus</span></h1>
-                      <h2>₦ 11,855/Month</h2>
-                      <h6>
-                        Startup
-                      </h6>
-                      <ul class="price_features">
-                        <li>
-                          2GB RAM
-                        </li>
-                        <li>
-                          20GB SSD Cloud Storage
-                        </li>
-                        <li>
-                          Weekly Backups
-                        </li>
-                        <li>
-                          DDoS Protection
-                        </li>
-                        <li>
-                          Full Root Access
-                        </li>
-                        <li>
-                          24/7/365 Tech Support
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="btn-box">
-                      <a href="">
-                        See Detail
-                      </a>
-                    </div>
-                  </div>
-                  <div class="box">
-                    <div class="detail-box">
-                      <h1>
-                        SpeedMax
-                        <span>Home</span></h1>
-                      <h2>₦ 18,768/Month</h2>
-                      <h6>
-                        Standard
-                      </h6>
-                      <ul class="price_features">
-                        <li>
-                          4GB RAM
-                        </li>
-                        <li>
-                          50GB SSD Cloud Storage
-                        </li>
-                        <li>
-                          Weekly Backups
-                        </li>
-                        <li>
-                          DDoS Protection
-                        </li>
-                        <li>
-                          Full Root Access
-                        </li>
-                        <li>
-                          24/7/365 Tech Support
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="btn-box">
-                      <a href="">
-                        See Detail
-                      </a>
-                    </div>
-                  </div>
-                  <div class="box">
-                    <div class="detail-box">
-                      <h1>SpeedMax <span> Extra</span> </h1>
-                      <h2>₦ 22,555/Month</h2>
-                      <h6>
-                        Business
-                      </h6>
-                      <ul class="price_features">
-                        <li>
-                          8GB RAM
-                        </li>
-                        <li>
-                          100GB SSD Cloud Storage
-                        </li>
-                        <li>
-                          Weekly Backups
-                        </li>
-                        <li>
-                          DDoS Protection
-                        </li>
-                        <li>
-                          Full Root Access
-                        </li>
-                        <li>
-                          24/7/365 Tech Support
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="btn-box">
-                      <a href="">
-                        See Detail
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section> {% endcomment %}
 
-        <section class="info_section layout_padding2">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="info_contact">
-                    <h4>
-                      Address
-                    </h4>
-                    <div class="contact_link_box">
+
+
+            <section class="info_section layout_padding2">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="info_contact">
+                      <h4>
+                        Contact Us:
+                      </h4>
+                      <div class="contact_link_box">
+                        <a href="">
+                          <i class="fa fa-map-marker" aria-hidden="true"></i>
+                          <span>
+                          
+                     
+                            Call : +234 08030767523
+                          </span>
+                        </a>
+                        <a href="">
+                          <i class="fa fa-envelope" aria-hidden="true"></i>
+                          <span>
+                          Email:  hurawireless@gmail.com
+                          </span>
+                        </a>
+          
+                        <a href="">
+                          <i class="fa fa-envelope" aria-hidden="true"></i>
+                          <span>
+                            Office Hours: Monday to Saturday, 8 am to 7 pm
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+          
+                    <div>
+                      <h4>Do more with Hura</h4>
+                      <p>Enjoy high-speed internet with our FibreMax Home Extra plan, designed to meet the needs of modern households..</p>
+                    </div>
+                    <div class="info_social">
                       <a href="">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>
-                          Location:
-                        </span>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
+                      <a href="">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                      <a href="">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                      </a>
+                      <a href="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="info_link_box">
+                      <h4>
+                        Links
+                      </h4>
+                      <div class="info_links">
+                        <a class="" href="{% url "index" %} ">
+                          <img src="{% static 'images/nav-bullet.png' %}"  alt="">
+                          Home
+                        </a>
+                        <a class="active" href="{% url "about" %} ">
+                          <img src="{% static 'images/nav-bullet.png' %}" alt="">
+                          About
+                        </a>
                       
-                      </a>
-                      <span>
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        56 okporo street port Harcourt-River state
-                      </span>
-                      <a href="">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <span>
-                          Call : +234 08030767523
-                        </span>
-                      </a>
-                      <a href="">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <span>
-                          hurawireless@gmail.com
-                        </span>
-                      </a>
+                        <a class="" href="{% url "speed" %}">
+                          <img src="{% static 'images/nav-bullet.png' %} " alt="">
+                          Residential
+                        </a>
+          
+                        <a class="" href="radio b">
+                          <img src="{% static 'images/nav-bullet.png' %} " alt="">
+                          Business
+                        </a>
+          
+                        <a class="" href="{% url "contact" %} ">
+                          <img src="{% static 'images/nav-bullet.png' %}"  alt="">
+                          Contact Us
+                        </a>
+                      </div>
                     </div>
                   </div>
-                  <div class="info_social">
-                    <a href="">
-                      <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                    <a href="">
-                      <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                    <a href="">
-                      <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                    <a href="">
-                      <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="info_link_box">
-                    <h4>
-                      Links
-                    </h4>
-                    <div class="info_links">
-                      <a class="" href="{% url "index" %} ">
-                        <img src="{% static 'images/nav-bullet.png' %}"  alt="">
-                        Home
-                      </a>
-                      <a class="active" href="{% url "about" %} ">
-                        <img src="{% static 'images/nav-bullet.png' %}" alt="">
-                        About
-                      </a>
-                    
-                      <a class="" href="{% url "radio" %}">
-                        <img src="{% static 'images/nav-bullet.png' %} " alt="">
-                        Residential
-                      </a>
-        
-                      <a class="" href="radio b">
-                        <img src="{% static 'images/nav-bullet.png' %} " alt="">
-                        Business
-                      </a>
-        
-                      <a class="" href="{% url "contact" %} ">
-                        <img src="{% static 'images/nav-bullet.png' %}"  alt="">
-                        Contact Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="info_detail">
-                    <h4>
-                      Info
-                    </h4>
-                    <p>
-                      necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+               
+                 
+                  <div class="col-md-3">
+                    <div class="info_detail">
+                      <h4>
+                        COVERAGE AREAS
+                      </h4>
+                      <p>Sars Road </p>
+                      
+                      <p>Elipokwuodu </p>
+                    <p>Rukpokwu</p>
+                    <p>Rumuaghaolu</p>
+                    <p>Rumuodomaya
                     </p>
+                    <p>Rumuokoro</p>
+                    <p>Ozuoba
+                    </p>
+                <p> Mgbuoba </p>
+                <p>Nkpelu, Port-Harcourt,Nigeria. </p>
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-3 mb-0">
-                  <h4>
-                    Subscribe
-                  </h4>
-                  <form id="subscribeForm">
-                    <input type="text" placeholder="Enter email" id="email" />
-                    <button type="submit">
-                      Subscribe
-                    </button>
-                  </form>
+                  
+                  <div>
+                  
+                    
+                 
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
-        
-          <!-- end info section -->
-        
-        
-          <!-- footer section -->
-          <footer class="footer_section">
-            <div class="container">
-              <p>
-                &copy; <span id="displayYear"></span> All Rights Reserved By
-                <a href="https://html.design/">Ukpono Andem</a>
-              </p>
-            </div>
-          </footer>
-          <!-- footer section --> 
+            </section>
+          
+            <!-- end info section -->
+          
+          
+            <!-- footer section -->
+            <footer class="footer_section">
+              <div class="container">
+                <p>
+                  &copy; <span id="displayYear"></span> All Rights Reserved By
+                Hura Network
+                </p>
+              </div>
+            </footer>
         
       <!-- jQery -->
   <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>

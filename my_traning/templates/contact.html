@@ -37,7 +37,7 @@
     <body>
         <body class="sub_page">
 
-            <div class="hero_area">
+            <div class="hero">
               <!-- header section strats -->
               <header class="header_section">
                 <div class="container-fluid">
@@ -60,12 +60,12 @@
                         </li>
           
           
-                        <li class="nav-item dropdown">
+                        {% comment %} <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="residentialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Residential
                           </a>
                           <div class="dropdown-menu" aria-labelledby="residentialDropdown">
-                            <a class="dropdown-item" href="{% url "speed" %}">Speed Home Plans</a>
+                            <a class="dropdown-item" href="{% url "speed" %}">Fibre Home Plans</a>
                             <a class="dropdown-item" href="{% url "radio" %} ">Radio Home Plans</a>
                            
                           </div>
@@ -84,18 +84,27 @@
                           
                           </div>
                         </li>
-          
+           {% endcomment %}
                         {% comment %} <li class="nav-item">
                           <a class="nav-link" href="service.html">Services</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="price.html">Pricing</a>
                         </li> {% endcomment %}
+
+                        <li class="nav-item active">
+                          <a class="nav-link" href="{% url "speed" %}"> Residential</a>
+                        </li>
+
+                        <li class="nav-item active">
+                          <a class="nav-link" href="{% url "radio b" %} ">  Business</a>
+                        </li>
+
                         <li class="nav-item">
                           <a class="nav-link" href="{% url "contact" %} ">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="{% url "coverage" %} ">Coverage</a>
+                          {% comment %} <a class="nav-link" href="{% url "coverage" %} ">Coverage</a> {% endcomment %}
                         </li>
                       </ul>
                       <div class="quote_btn-container">
@@ -115,6 +124,7 @@
                   </nav>
                 </div>
               </header>
+              <!-- end header section -->
               <!-- end header section -->
             </div>
 

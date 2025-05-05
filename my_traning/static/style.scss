@@ -1,8 +1,8 @@
-$white: #ffffff;
-$black: #000000;
-$primary1: #03a7d3;
-$primary2: #ff4646;
-$textCol: #999;
+// $white: #ffffff;
+// $black: #000000;
+// $primary1: #03a7d3;
+// $primary2: #ff4646;
+// $textCol: #999;
 
 @mixin main-font {
   font-family: "Roboto", sans-serif;
@@ -170,7 +170,9 @@ a:focus {
       }
 
       &:hover {
-        .nav-link {}
+         .nav-link {
+          
+         }
       }
     }
   }
@@ -184,7 +186,7 @@ a:focus {
   color: $white;
   margin: 0 20px;
 
-  &:hover {}
+  // &:hover {}
 }
 
 .custom_nav-container .navbar-toggler {
@@ -261,7 +263,8 @@ a:focus {
     .s-1,
     .s-2,
     .s-3 {
-      transform: none;
+      // transform: none;
+      transform: rotate(45deg);
     }
   }
 }
@@ -278,7 +281,7 @@ a:focus {
       margin-left: 5px;
     }
 
-    &:hover {}
+    // &:hover {}
   }
 }
 
@@ -413,7 +416,7 @@ a:focus {
     align-items: center;
     text-align: center;
     padding: 25px;
-    background-color: #fafafa;
+    background-color:orange;
     box-shadow: 0 0 5px 0 rgba($color: #000000, $alpha: .15);
 
     .img-box {

@@ -37,7 +37,7 @@
     <body>
         <body class="sub_page">
 
-            <div class="hero_area">
+            <div class="hero">
               <!-- header section strats -->
               <header class="header_section">
                 <div class="container-fluid">
@@ -60,12 +60,12 @@
                         </li>
           
           
-                        <li class="nav-item dropdown">
+                        {% comment %} <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="residentialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Residential
                           </a>
                           <div class="dropdown-menu" aria-labelledby="residentialDropdown">
-                            <a class="dropdown-item" href="{% url "speed" %}">Speed Home Plans</a>
+                            <a class="dropdown-item" href="{% url "speed" %}">Fibre Home Plans</a>
                             <a class="dropdown-item" href="{% url "radio" %} ">Radio Home Plans</a>
                            
                           </div>
@@ -84,18 +84,27 @@
                           
                           </div>
                         </li>
-          
+           {% endcomment %}
                         {% comment %} <li class="nav-item">
                           <a class="nav-link" href="service.html">Services</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="price.html">Pricing</a>
                         </li> {% endcomment %}
+
+                        <li class="nav-item active">
+                          <a class="nav-link" href="{% url "speed" %}"> Residential</a>
+                        </li>
+
+                        <li class="nav-item active">
+                          <a class="nav-link" href="{% url "radio b" %} ">  Business</a>
+                        </li>
+
                         <li class="nav-item">
                           <a class="nav-link" href="{% url "contact" %} ">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="{% url "coverage" %} ">Coverage</a>
+                          {% comment %} <a class="nav-link" href="{% url "coverage" %} ">Coverage</a> {% endcomment %}
                         </li>
                       </ul>
                       <div class="quote_btn-container">
@@ -115,6 +124,7 @@
                   </nav>
                 </div>
               </header>
+              <!-- end header section -->
               <!-- end header section -->
             </div>
 
@@ -151,7 +161,7 @@
     </div>
   </section>
 
-
+{% comment %} 
   <section class="service_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
@@ -162,15 +172,15 @@
       <div class="row">
         <div class="col-md-6 col-lg-4">
           <div class="box ">
-            {% comment %} <div class="img-box">
+            <div class="img-box">
               <img src="{% static 'images/s1.png' %} " alt="">
-            </div> {% endcomment %}
+            </div> 
             <div class="detail-box">
              <h5>Ultrafast, Ultra-reliable</h5>
               <p>
                  Hura network boasts an exceptional reliability rate of 99.98%, ensuring seamless connectivity for homes and offices. With a robust infrastructure designed for optimal performance, Hura consistently surpasses both customer expectations and regulatory uptime requirements, delivering an unparalleled level of trust and consistency in its services. {% comment %}Our network’s resilience offers peace of mind to users, knowing that we provide the high availability they rely on, day in and day out. {% endcomment %}
   
-  
+{% comment %}   
               </p>
              
             </div>
@@ -178,9 +188,9 @@
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="box ">
-            {% comment %} <div class="img-box">
+            <div class="img-box">
               <img src="{% static 'images/s2.png' %}" alt="">
-            </div> {% endcomment %}
+            </div>
             <div class="detail-box">
             <h5>24/7 Support</h5>
               <p>
@@ -194,13 +204,13 @@
 
         <div class="col-md-6 col-lg-4">
           <div class="box ">
-            {% comment %} <div class="img-box">
+            <div class="img-box">
               <img src="{% static 'images/s2.png' %}" alt="">
-            </div> {% endcomment %}
+            </div> 
             <div class="detail-box">
            <h5>Unlimited Downloads</h5>
               <p>
-                At Hura, we believe in unlimited access, so you can download as much or as little content as you want, with no restrictions. Upload and download files effortlessly, enjoy seamless video calls and conferencing, stream music and videos, play online games, and so much more—all without limitations!
+               
               </p>
               
             
@@ -211,8 +221,8 @@
       </div>
     </div>
 
-  </section>
-  <p> Choose Hura Internet Broadband today for a connected future with no limits! </p>
+  </section>  {% endcomment %} 
+  <p> Choose Hura Internet Broadband today for a connect future with no limits! </p>
 
 
   <!-- end about section -->
@@ -225,32 +235,36 @@
         <div class="col-md-3">
           <div class="info_contact">
             <h4>
-              Address
+              Contact Us:
             </h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
-                </span>
-              </a>
-              <span>
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                56 okporo street port Harcourt-River state
-              </span>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
+                
+           
                   Call : +234 08030767523
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  hurawireless@gmail.com
+                Email:  hurawireless@gmail.com
+                </span>
+              </a>
+
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  Office Hours: Monday to Saturday, 8 am to 7 pm
                 </span>
               </a>
             </div>
+          </div>
+
+          <div>
+            <h4>Do more with Hura</h4>
+            <p>Enjoy high-speed internet with our FibreMax Home Extra plan, designed to meet the needs of modern households..</p>
           </div>
           <div class="info_social">
             <a href="">
@@ -282,7 +296,7 @@
                 About
               </a>
             
-              <a class="" href="{% url "radio" %}">
+              <a class="" href="{% url "speed" %}">
                 <img src="{% static 'images/nav-bullet.png' %} " alt="">
                 Residential
               </a>
@@ -299,26 +313,32 @@
             </div>
           </div>
         </div>
+     
+       
         <div class="col-md-3">
           <div class="info_detail">
             <h4>
-              Info
+              COVERAGE AREAS
             </h4>
-            <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-            </p>
+            <p>Sars Road </p>
+            
+            <p>Elipokwuodu </p>
+          <p>Rukpokwu</p>
+          <p>Rumuaghaolu</p>
+          <p>Rumuodomaya
+          </p>
+          <p>Rumuokoro</p>
+          <p>Ozuoba
+          </p>
+      <p> Mgbuoba </p>
+      <p>Nkpelu, Port-Harcourt,Nigeria. </p>
           </div>
         </div>
-        <div class="col-md-3 mb-0">
-          <h4>
-            Subscribe
-          </h4>
-          <form id="subscribeForm">
-            <input type="text" placeholder="Enter email" id="email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
+        
+        <div>
+        
+          
+       
         </div>
       </div>
     </div>
@@ -332,7 +352,7 @@
     <div class="container">
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
-        Ukpono Andem
+      Hura Network
       </p>
     </div>
   </footer>

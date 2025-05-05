@@ -60,12 +60,12 @@
                         </li>
           
           
-                        <li class="nav-item dropdown">
+                        {% comment %} <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="residentialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Residential
                           </a>
                           <div class="dropdown-menu" aria-labelledby="residentialDropdown">
-                            <a class="dropdown-item" href="{% url "speed" %}">Speed Home Plans</a>
+                            <a class="dropdown-item" href="{% url "speed" %}">Fibre Home Plans</a>
                             <a class="dropdown-item" href="{% url "radio" %} ">Radio Home Plans</a>
                            
                           </div>
@@ -84,18 +84,27 @@
                           
                           </div>
                         </li>
-          
+           {% endcomment %}
                         {% comment %} <li class="nav-item">
                           <a class="nav-link" href="service.html">Services</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="price.html">Pricing</a>
                         </li> {% endcomment %}
+
+                        <li class="nav-item active">
+                          <a class="nav-link" href="{% url "speed" %}"> Residential</a>
+                        </li>
+
+                        <li class="nav-item active">
+                          <a class="nav-link" href="{% url "radio b" %} ">  Business</a>
+                        </li>
+
                         <li class="nav-item">
                           <a class="nav-link" href="{% url "contact" %} ">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="{% url "coverage" %} ">Coverage</a>
+                          {% comment %} <a class="nav-link" href="{% url "coverage" %} ">Coverage</a> {% endcomment %}
                         </li>
                       </ul>
                       <div class="quote_btn-container">
@@ -136,12 +145,12 @@
                       Experience  on the connection with our state of the  customer service.
                      </p>
                     <div class="btn-box">
-                      <a href="{% url "about" %}" class="btn-1">
+                      {% comment %} <a href="{% url "about" %}" class="btn-1">
                         Read More
                       </a>
                       <a href="{% url "contact" %}" class="btn-2">
                         Contact Us
-                      </a>
+                      </a> {% endcomment %}
                     </div>
                   </div>
                 </div>
@@ -149,7 +158,7 @@
                   <div class="row">
                     <div class=" col-lg-10 mx-auto">
                       <div class="img-box">
-                        <img src="{% static 'images/slider-img.png' %}"  alt="">
+                         {% comment %} <img src="{% static 'images/dd.jpg' %}"  alt="">  {% endcomment %}
                       </div>
                     </div>
                   </div>
@@ -169,12 +178,7 @@
                     <p>
                       Experience boundless fun with the force of SpeedMax! </p>
                     <div class="btn-box">
-                      <a href="{% url "about" %}" class="btn-1">
-                        Read More
-                      </a>
-                      <a href="{% url "contact" %}" class="btn-2">
-                        Contact Us
-                      </a>
+                   
                     </div>
                   </div>
                 </div>
@@ -182,7 +186,7 @@
                   <div class="row">
                     <div class=" col-lg-10 mx-auto">
                       <div class="img-box">
-                        <img src="{% static 'images/slider-img.png' %}" alt="">
+                        {% comment %} <img src="{% static 'images/slider-img.png' %}" alt=""> {% endcomment %}
                       </div>
                     </div>
                   </div>
@@ -205,12 +209,7 @@
                       Feel the excitement with the unstoppable force of SpeedMax!
                        </p>
                     <div class="btn-box">
-                      <a href="{% url "about" %}" class="btn-1">
-                        Read More
-                      </a>
-                      <a href="{% url "contact" %}" class="btn-2">
-                        Contact Us
-                      </a>
+               
                     </div>
                   </div>
                 </div>
@@ -218,7 +217,7 @@
                   <div class="row">
                     <div class=" col-lg-10 mx-auto">
                       <div class="img-box">
-                        <img src="{% static 'images/slider-img.png' %}" alt="">
+                        {% comment %} <img src="{% static 'images/slider-img.png' %}" alt=""> {% endcomment %}
                       </div>
                     </div>
                   </div>
@@ -241,12 +240,7 @@
 Enjoy seamless service with our cutting-edge customer support, always ready to assist you!
                        </p>
                     <div class="btn-box">
-                      <a href="{% url "about" %}" class="btn-1">
-                        Read More
-                      </a>
-                      <a href="{% url "contact" %}" class="btn-2">
-                        Contact Us
-                      </a>
+                 
                     </div>
                   </div>
                 </div>
@@ -254,7 +248,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                   <div class="row">
                     <div class=" col-lg-10 mx-auto">
                       <div class="img-box">
-                        <img src="{% static 'images/slider-img.png' %}" alt="">
+                        {% comment %} <img src="{% static 'images/slider-img.png' %}" alt=""> {% endcomment %}
                       </div>
                     </div>
                   </div>
@@ -274,12 +268,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                     <p>
                       With one of our Unlimited Internet plans, you can stream, browse and download to your heart’s content, and we’ll never slow you down or charge you extra. You can get unlimited internet with both our fixed wireless and our Ultra-fast Fiber Broadband. </p>
                     <div class="btn-box">
-                      <a href="{% url "about" %}" class="btn-1">
-                        Read More
-                      </a>
-                      <a href="{% url "contact" %}" class="btn-2">
-                        Contact Us
-                      </a>
+                  
                     </div>
                   </div>
                 </div>
@@ -287,7 +276,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                   <div class="row">
                     <div class=" col-lg-10 mx-auto">
                       <div class="img-box">
-                        <img src="{% static 'images/slider-img.png' %}" alt="">
+                        {% comment %} <img src="{% static 'images/slider-img.png' %}" alt=""> {% endcomment %}
                       </div>
                     </div>
                   </div>
@@ -312,12 +301,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                     <p>
                      Give your Businesses an  Unlock endless enjoyment with the strength of SpeedMax! </p>
                     <div class="btn-box">
-                      <a href="" class="btn-1">
-                        Read More
-                      </a>
-                      <a href="" class="btn-2">
-                        Contact Us
-                      </a>
+                  
                     </div>
                   </div>
                 </div>
@@ -325,7 +309,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                   <div class="row">
                     <div class=" col-lg-10 mx-auto">
                       <div class="img-box">
-                        <img src="{% static 'images/slider-img.png' %}" alt="">
+                        {% comment %} <img src="{% static 'images/slider-img.png' %}" alt=""> {% endcomment %}
                       </div>
                     </div>
                   </div>
@@ -353,12 +337,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                     <p>
                       Excess Speed Internet Service Built on Hura Boardband </p>
                     <div class="btn-box">
-                      <a href="" class="btn-1">
-                        Read More
-                      </a>
-                      <a href="" class="btn-2">
-                        Contact Us
-                      </a>
+                      
                     </div>
                   </div>
                 </div>
@@ -366,7 +345,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                   <div class="row">
                     <div class=" col-lg-10 mx-auto">
                       <div class="img-box">
-                        <img src="{% static 'images/slider-img.png' %}" alt="">
+                        {% comment %} <img src="{% static 'images/slider-img.png' %}" alt=""> {% endcomment %}
                       </div>
                     </div>
                   </div>
@@ -424,7 +403,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                           </div>
                             <div class="second_header">
                               <h5>From As Low As</h5>
-                              <h4>N13,110</h4>
+                              <h4>N13,800</h4>
                               <h4>Monthly</h4>
                             </div>
 
@@ -435,7 +414,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                   <div class="row">
                     <div class=" col-lg-10 mx-auto">
                       <div class="img-box">
-                        <img src="{% static 'images/slider-img.png' %}" alt="">
+                        {% comment %} <img src="{% static 'images/slider-img.png' %}" alt=""> {% endcomment %}
                       </div>
                     </div>
                   </div>
@@ -445,7 +424,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
           </div>
 
 
-          <div class="carousel-item">
+          {% comment %} <div class="carousel-item">
             <div class="container ">
               <div class="rows">
                 <div class="col-md-6s">
@@ -532,24 +511,24 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                         Contact Us
                       </a>
                     </div> {% endcomment %}
-                  </div>
+                  {% comment %} </div>
                 </div>
-              
-                <div class="col-md-6">
+               {% endcomment %}
+                {% comment %} <div class="col-md-6">
                   <div class="row">
                     <div class=" col-lg-10 mx-auto">
-                      <div class="img-box">
-                        {% comment %} <img src="{% static 'images/slider-img.png' %}" alt=""> {% endcomment %}
+                      <div class="img-box"> {% endcomment %}
+                        {% comment %} <img src="{% static 'images/slider-img.png' %}" alt="">
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </div>  {% endcomment %}
 
          
-
+{% comment %} 
           <div class="carousel-item">
             <div class="container ">
               <div class="rows">
@@ -603,7 +582,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                       </div>
 
 
-                      </div>
+                      </div> {% endcomment %}
                     {% comment %} <div class="btn-box">
                       <a href="" class="btn-1">
                         Read More
@@ -612,20 +591,20 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                         Contact Us
                       </a>
                     </div> {% endcomment %}
-                  </div>
+                  {% comment %} </div>
                 </div>
                 <div class="col-md-6">
                   <div class="row">
                     <div class=" col-lg-10 mx-auto">
                       <div class="img-box">
                         {% comment %} <img src="{% static 'images/slider-img.png' %}" alt=""> {% endcomment %}
-                      </div>
+                      {% comment %} </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </div> {% endcomment %} 
 
 
        
@@ -637,44 +616,48 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                   <div class="detail-box">
                     <div class="scoll_txt">
                     <h1 class="hello">
-                       Radio Home Plans
+                       Fiber Home Plans
                     </h1>
                     <p>MORE SPEED ZERO DATA CAP
                       </p>
                     </div>
                       <div class="scoll_box" >
                         <div class="scoll_txt" >
-                        <h4>AirSpeed</h4>
-                        <p>LitePlus</p>
-                     
-                        <button class="scoll_btn">
-                          <h2 class="scoll_h1"><span>5</span>mbps</h2>
-                          <p class="scoll_p">Price<span>N13,110</span></p>
-                        </button>
-                      </div>
-
-                      <div class="scoll_txt" >
-                        <h4>AirSpeed</h4>
-                        <p>Home</p>
+                        <h4>Fiber</h4>
+                        <p>Essence</p>
                      
                         <button class="scoll_btn">
                           <h2 class="scoll_h1">1<span>2</span>mbps</h2>
-                          <p class="scoll_p">Price<span>N19,266</span></p>
+                          <p class="scoll_p">Price<span>₦13,800/month</span></p>
                         </button>
                       </div>
 
                       <div class="scoll_txt" >
-                        <h4>AirSpeed</h4>
-                        <p>HomeExtra</p>
+                        <h4>Fiber </h4>
+                        <p>Junna</p>
                      
                         <button class="scoll_btn">
-                          <h2 class="scoll_h1">1<span>7</span>mbps</h2>
-                          <p class="scoll_p">Price<span>N23,940</span></p>
+                          <h2 class="scoll_h1">1<span>8</span>mbps</h2>
+                          <p class="scoll_p">Price<span>₦20,500/Month</span></p>
                         </button>
                       </div>
 
+                      <div class="scoll_txt" >
+                        <h4>Fiber</h4>
+                        <p>Stara</p>
+                     
+                        <button class="scoll_btn">
+                          <h2 class="scoll_h1"> 3<span>5</span>mbps</h2>
+                          <p class="scoll_p">Price<span>35,000/Month</span></p>
+                        </button>
+                      </div>
+                     
                      
                       </div>
+                    
+                      <a href="{% url "speed" %}">
+                        <h5 class="more-h4">More details...</h5>
+                        </a>
                     {% comment %} <div class="btn-box">
                       <a href="" class="btn-1">
                         Read More
@@ -708,7 +691,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                     <div class="scoll_txt">
                     <h2 class="header_h1">
                     
-                      Radio Business Plans
+                      Fiber Business Plans
                     </h2>
                     <p>MORE SPEED ZERO DATA CAP</p>
                   </div>
@@ -719,52 +702,53 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
 
 <div class="scoll_box">
   <div class="scoll_txt">
-  <h5>AirSpeed</h5>
-  <p>Large</p>
+  <h5>Fiber</h5>
+  <p>Essence</p>
 
   <button class="scoll_btn">
-    <h2 class="scoll_h1"><span>7</span>mbps</h2>
-    <p class="scoll_p">Price<span>N30,552</span></p>
+    <h2 class="scoll_h1">1<span>2</span>mbps</h2>
+    <p class="scoll_p">Price<span>₦13,800/Month</span></p>
   </button>
 </div>
 
   <div class="scoll_txt">
-    <h5>AirSpeed</h5>
-    <p>Max</p>
+    <h5>Fiber</h5>
+    <p>Classic</p>
  
 
   <button class="scoll_btn">
-    <h2>1<span>2</span>mbps</h2>
-    <p>Price<span>N49,702</span></p>
+    <h2>2<span>5</span>mbps.</h2>
+    <p>Price<span>₦35,000/Month</span></p>
   </button>
 </div>
 
 <div class="scoll_txt">
-  <h5>AirSpeed</h5>
-  <p>Ultra</p>
+  <h5>Fiber</h5>
+  <p>Elite</p>
 
   <button class="scoll_btn">
-    <h2 class="scoll_h1">1<span>7</span>mbps</h2>
-    <p class="scoll_p">Price<span>N88,122</span></p>
+    <h2 class="scoll_h1">3<span>5</span>mbps</h2>
+    <p class="scoll_p">Price<span>₦40,000/Month</span></p>
   </button>
 </div>
 
-  <div class="scoll_txt">
-    <h5>AirSpeed</h5>
-    <p>Ultimate</p>
+  {% comment %} <div class="scoll_txt">
+    <h5>Fiber</h5>
+    <p>Platinum</p>
  
 
   <button class="scoll_btn">
-    <h2>2<span>5</span>mbps</h2>
-    <p>Price<span>N120,384</span></p>
+    <h2>5<span>0</span>mbps</h2>
+    <p>Price<span>₦55,000/Month</span></p>
   </button>
+</div>{% endcomment %}
 </div>
 
- 
+  <a href="{%url "radio b" %}">
+  <h5 class="more-h4">More details...</h>
+  </a>
+  
 
- 
-</div>
-    
                      {% comment %} <div class="btn-box">
                       <a href="" class="btn-1">
                         Read More
@@ -774,6 +758,9 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                       </a>
                     </div> {% endcomment %}
                   </div>
+
+                 
+
                 </div>
                 <div class="col-md-6">
                   <div class="row">
@@ -995,8 +982,8 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
   <!-- server section -->
 
 
-  <section class="server_section">
-    <div class="container ">
+  {% comment %} <section class="">
+    <div class="container">
       <div class="row">
         <div class="col-md-6">
           <div class="img-box">
@@ -1015,8 +1002,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                 Let Us Manage Your Network with Hura Network
               </h2>
               <p>
-               At Hura Network, we offer expert network management services designed to keep your systems running smoothly and securely.  {% comment %} With our team of skilled professionals, we provide 24/7 monitoring, proactive management, and tailored solutions to meet your unique needs. {% endcomment %}
-
+               At Hura Network, we offer expert network management services designed to keep your systems running smoothly and securely.With our team of skilled professionals, we provide 24/7 monitoring, proactive management, and tailored solutions to meet your unique needs.
                 From network performance optimization to robust security measures, we ensure your network stays secure, efficient, and scalable as your business grows. Let us handle the technical aspects so you can focus on what matters most—growing your business.
               </p>
               <p>Contact Hura Network today to manage your network seamlessly!
@@ -1031,122 +1017,164 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </div> 
+  </section>  {% endcomment %}
 
   <!-- end server section -->
 
   <!-- price section -->
 
-  <section class="price_section layout_padding">
+
+  <section>
+    <div class="why-main">
+  <div class="why-text">
+  <h3>Why choose Hura ?</h3>
+  
+  {% comment %} <h5>Ultrafast, Ultra-reliable</5> {% endcomment %}
+  Experience the power of Hura's high-speed fiber optics internet, designed to give you seamless streaming, fast downloads, and uninterrupted online experiences. Whether you're streaming your favorite movies or working from home, our fiber-optic service ensures smooth connectivity every time.</p>
+  
+   <p> Reliable for Work-from-Home (WFH): Need a stable internet connection for your remote work? Hura's fiber optics internet is perfect for video conferencing, file sharing, and uninterrupted online work, making sure your productivity stays high.</p>
+    
+   <p>Resilient to Weather Conditions: With fiber internet, you no longer have to worry about weather disruptions like heavy rain or thunderstorms affecting your signal. Hura ensures you stay connected no matter the weather outside.</p>
+    <p>Blazing Fast Speeds: Say goodbye to buffering! With Hura's fiber optics, you get lightning-fast internet speeds that make streaming, downloading, and browsing effortless.</p>
+    <p>Symmetrical Upload and Download Speeds: Enjoy equally fast upload and download speeds, eliminating lag and ensuring smooth data transfers for all your needs, from online meetings to uploading large files.</p>
+    <p>Enhanced Security: Fiber optics provide a more secure connection, making it difficult for cyber threats to intercept your data, so you can browse, work, and enjoy your digital life with peace of mind.</p>
+    
+   <p> At Hura, we deliver superior fiber internet services in key areas and surrounding regions. With our unlimited data plans and exceptional performance, Hura is the perfect choice for both personal and business use. Get ready for a faster, more reliable internet experience with Hura.</p>
+  </div>
+  <div class="why-image">
+    <img src="{% static 'images/df.jpg' %}" alt="">
+  </div>
+    </div>
+  </section>
+
+
+
+  {% comment %} <section class="price_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
          Hura Home Plans
         </h2>
+        <p>Enjoy high-speed internet with our speedMax Home Extra plan, designed to meet the needs of modern households.</p>
       </div>
       <div class="price_container ">
         <div class="box">
           <div class="detail-box">
-            <h1>SpeedMax <span>Liteplus</span></h1>
-            <h2>₦13,110 /month</h2>
-            <h6>
-              Startup
-            </h6>
+            <h3>Fiber <span>Lite</span></h3>
+            <h4 class="clos">Up to 15mbps.</h4>
+            <div>
+             <h4 class="colls">
+              Features included:
+            </h4> 
+          </div>
             <ul class="price_features">
-              <li>
-                2GB RAM
-              </li>
-              <li>
-                20GB SSD Cloud Storage
-              </li>
-              <li>
-                Weekly Backups
-              </li>
-              <li>
-                DDoS Protection
-              </li>
-              <li>
-                Full Root Access
-              </li>
-              <li>
-                24/7/365 Tech Support
-              </li>
-            </ul>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <span>
+                    Unlimited Download
+                  </span>
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited Upload
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited streaming
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited Gaming
+                </li>
+               
+              </ul>
+
+              <h4 class="clos">Starting from ₦13,110 /month</h4>
+        
           </div>
           <div class="btn-box">
             <a href="{% url "contact" %}">
-              Sign up
+              Register Now
             </a>
           </div>
         </div>
         <div class="box">
           <div class="detail-box">
-            <h1>
-              SpeedMax
-              <span>Home</span></h1>
-            <h2>₦19,266 /month</h2>
-            <h6>
-              Standard
-            </h6>
+            <h3>Fiber  <span>Essentials</span></h3>
+            <h4 class="clos">Up to 40mbps.</h4>
+            <div>
+             <h4 class="colls">
+              Features included:
+            </h4> 
+          </div>
             <ul class="price_features">
-              <li>
-                4GB RAM
-              </li>
-              <li>
-                50GB SSD Cloud Storage
-              </li>
-              <li>
-                Weekly Backups
-              </li>
-              <li>
-                DDoS Protection
-              </li>
-              <li>
-                Full Root Access
-              </li>
-              <li>
-                24/7/365 Tech Support
-              </li>
-            </ul>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <span>
+                    Unlimited Download
+                  </span>
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited Upload
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited streaming
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited Gaming
+                </li>
+               
+              </ul>
+
+              <h4 class="clos">Starting from ₦19,266/month</h4>
           </div>
           <div class="btn-box">
             <a href="{% url "contact" %}">
-              Sign up
+            Register Now
             </a>
           </div>
         </div>
         <div class="box">
           <div class="detail-box">
-            <h1>SpeedMax <span> Extra</span> </h1>
-            <h2>₦23,940 /month</h2>
-            <h6>
-              Business
-            </h6>
+            <h3>Fiber <span>Standard</span></h3>
+            <h4 class="clos">Up to 60mbps.</h4>
+            <div>
+             <h4 class="colls">
+              Features included:
+            </h4> 
+          </div>
             <ul class="price_features">
-              <li>
-                8GB RAM
-              </li>
-              <li>
-                100GB SSD Cloud Storage
-              </li>
-              <li>
-                Weekly Backups
-              </li>
-              <li>
-                DDoS Protection
-              </li>
-              <li>
-                Full Root Access
-              </li>
-              <li>
-                24/7/365 Tech Support
-              </li>
-            </ul>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <span>
+                    Unlimited Download
+                  </span>
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited Upload
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited streaming
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited Gaming
+                </li>
+               
+              </ul>
+
+              <h4 class="clos">Starting from ₦23,940 /month</h4>
+        
           </div>
           <div class="btn-box">
             <a href="{% url "contact" %}">
-              Sign up
+              Register Now
             </a>
           </div>
         </div>
@@ -1154,13 +1182,11 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
 
      
     </div>
-    <a href="{% url "speed" %}">
-      <button class="home_btn">SEE MORE PLANS</button>  
-    </a>  
-  </section>
+  
+  </section> {% endcomment %}
 
 
-  <section class="price_section layout_padding">
+  {% comment %} <section class="price_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
@@ -1170,105 +1196,120 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
       <div class="price_container ">
         <div class="box">
           <div class="detail-box">
-            <h1> SpeedMax <span>Large</span> </h1>
-            <h2>₦30,552 /month
+            <h3>Fiber <span>Essence</span></h3>
+            <h4 class="clos">Up to 85mbps..</h4>
+            <div>
+             <h4 class="colls">
+              Features included:
+            </h4> 
+          </div>
+            <ul class="price_features">
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <span>
+                    Unlimited Download
+                  </span>
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited Upload
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited streaming
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited Gaming
+                </li>
+               
+              </ul>
 
-            </h2>
-            <h6>
-              Startup
-            </h6>
-            <ul class="price_features">
-              <li>
-                2GB RAM
-              </li>
-              <li>
-                20GB SSD Cloud Storage
-              </li>
-              <li>
-                Weekly Backups
-              </li>
-              <li>
-                DDoS Protection
-              </li>
-              <li>
-                Full Root Access
-              </li>
-              <li>
-                24/7/365 Tech Support
-              </li>
-            </ul>
+              <h4 class="clos">Starting from  ₦40,641 /month</h4>
+        
           </div>
           <div class="btn-box">
             <a href="{% url "contact" %}">
-              Sign up
+              Register Now
             </a>
           </div>
         </div>
         <div class="box">
           <div class="detail-box">
-            <h1> SpeedMax <span>Max</span> </h1>
-            <h2>₦49,704 /month</h2>
-            <h6>
-              Standard
-            </h6>
+            <h3>Fiber <span>Gold</span></h3>
+            <h4 class="clos">Up to 125mbps.</h4>
+            <div>
+             <h4 class="colls">
+              Features included:
+            </h4> 
+          </div>
             <ul class="price_features">
-              <li>
-                4GB RAM
-              </li>
-              <li>
-                50GB SSD Cloud Storage
-              </li>
-              <li>
-                Weekly Backups
-              </li>
-              <li>
-                DDoS Protection
-              </li>
-              <li>
-                Full Root Access
-              </li>
-              <li>
-                24/7/365 Tech Support
-              </li>
-            </ul>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <span>
+                    Unlimited Download
+                  </span>
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited Upload
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited streaming
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited Gaming
+                </li>
+               
+              </ul>
+
+              <h4 class="clos">Starting from  ₦56,316/month</h4>
           </div>
           <div class="btn-box">
             <a href="{% url "contact" %}">
-              Sign up
+            Register Now
             </a>
           </div>
         </div>
         <div class="box">
           <div class="detail-box">
-            <h1>SpeedMax <span>Ultra</span> </h1>
-            <h2>₦88,122 /month</h2>
-            <h6>
-              Business
-            </h6>
+            <h3>Fiber <span>Premium</span></h3>
+            <h4 class="clos">Up to 180mbps..</h4>
+            <div>
+             <h4 class="colls">
+              Features included:
+            </h4> 
+          </div>
             <ul class="price_features">
-              <li>
-                8GB RAM
-              </li>
-              <li>
-                100GB SSD Cloud Storage
-              </li>
-              <li>
-                Weekly Backups
-              </li>
-              <li>
-                DDoS Protection
-              </li>
-              <li>
-                Full Root Access
-              </li>
-              <li>
-                24/7/365 Tech Support
-              </li>
-            </ul>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <span>
+                    Unlimited Download
+                  </span>
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited Upload
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited streaming
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  Unlimited Gaming
+                </li>
+               
+              </ul>
+
+              <h4 class="clos">Starting from ₦74,214 /month</h4>
+        
           </div>
           <div class="btn-box">
             <a href="{% url "contact" %}">
-              Sign up
+              Register Now
             </a>
           </div>
         
@@ -1281,13 +1322,216 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
 
 
   </section>
-  
+   {% endcomment %}
 
-  <div class="speed-txt">
-    <a href="{% url "speed b" %}">
-        <button class="home_btn">SEE MORE PLANS</button>  
-      </a>
-    </div>  
+
+
+
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+        
+        </h2>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s1.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Fast File Transfer
+              </h4>
+              {% comment %} <p>
+                Generators on the Internet tend to repeat predefined chunks as necessary
+              </p>
+              <a href="">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a> {% endcomment %}
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s2.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Unlimited Data
+              </h4>
+              {% comment %} <p>
+                Generators on the Internet tend to repeat predefined chunks as necessary
+              </p>
+              <a href="">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a> {% endcomment %}
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s3.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+              
+          Trusted & Reliable Network
+              </h4>
+              {% comment %} <p>
+                Generators on the Internet tend to repeat predefined chunks as necessary
+              </p>
+              <a href="">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a> {% endcomment %}
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s4.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Guaranteed Speeds
+              </h4>
+              {% comment %} <p>
+                Generators on the Internet tend to repeat predefined chunks as necessary
+              </p>
+              <a href="">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a> {% endcomment %}
+            </div>
+          </div>
+        </div>
+   
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <section>
+    <h3 class="How-h3">How it work</h3>
+    <div class="how-main">
+  
+    
+  
+    
+  <div class="how-text">
+    <span class="num">01..</span>
+    <h5>Choose your package</h5>
+<p>Browse our internet plans and select the one that best suit your needs. check below</p>
+{% comment %} <div class="btn-box">
+  <a href="{% url "speed" %}">
+  RESIDENTIAL
+  </a>
+  OR
+  <a href="{% url "radio b" %} ">
+    BUSINESS
+    </a>
+</div> {% endcomment %}
+
+
+</div>
+
+
+<div class="detail-box">
+  <div class="btn-box">
+    <a href="{% url "speed" %}" class="btn-register"> RESIDENTIAL</a>
+    OR
+    <a href="{% url "radio b" %}" class="btn-register">   BUSINESS </a>
+  </div>
+</div>
+
+<div class="how-text">
+  <span class="num">02..</span>
+<h5>Contact Us</h5>
+<p>For bookings and installation, please use the contact details provided below.</p>
+
+<div class="detail-box">
+  <div class="btn-box">
+   
+    
+  </div>
+</div>
+</div>
+<a href="{% url "contact" %}" class="btn-register">CONTACT</a>
+<div class="how-text"> 
+  <span class="num">03..</span>
+<h5>Sit back and relax</h5>
+<p>We’ll process your information and contact you regarding your installation date.</p>
+</div>
+  
+</div>
+  </section>
+
+  <section>
+    <div class="different-main">
+      <!-- Image Section -->
+      <div class="different-image">
+        <img src="{% static 'images/fam.jpg' %}" alt="Business Connectivity Image"> 
+      </div>
+  
+      <!-- Text Content Section -->
+      <div class="different-txt">
+        <h1>Get Down to Business</h1>
+        <h3>Give Your Business the Competitive Edge with Hura.</h3>
+        <p>
+          In today’s fast-paced and ever-evolving market, a reliable, high-speed internet connection is crucial for staying ahead of the competition. With Hura's fiber optics internet, your business can operate at maximum efficiency, ensuring smooth communication, seamless transactions, and uninterrupted workflows.
+        </p>
+        <p>Don't let slow or unreliable internet hold you back. Empower your team with Hura's lightning-fast speeds, and give your business the edge it needs to thrive in today’s competitive world.</p>
+  
+        <div class="detail-box">
+          <div class="btn-box">
+            <a href="{% url 'contact' %}" class="btn-register">SAVE MORE</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Features Section with Flex Layout -->
+      <div class="side">
+        <div class="different-text">
+          <h5>Hura Unlimited Downloads</h5>
+          <p>
+            At Hura, we believe in unlimited access, so you can download as much or as little content as you want, with no restrictions. Upload and download files effortlessly, enjoy seamless video calls and conferencing, stream music and videos, play online games, and so much more—all without limitations!
+          </p>
+        </div>
+  
+        <div class="different-text">
+          <h5>Hura Unlimited Streaming</h5>
+          <p>
+            Stream your favorite shows and movies in high definition without buffering. FibreMax offers the speed and reliability you need for flawless streaming, no matter how many devices are connected.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="last-section">
+    <h4>
+      WE Got You covered!
+    </h4>
+    <p>
+      Worry not if anything goes wrong with your Hura service, We’ll sort it out no charge. This excludes misuse & mistreatment- so try not to use your Hura router as a coaster.
+
+
+    </p>
+  </div>
 
   <!-- price section -->
 
@@ -2068,33 +2312,36 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
         <div class="col-md-3">
           <div class="info_contact">
             <h4>
-              Address
+              Contact Us:
             </h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location:
-                </span>
-              
-              </a>
-              <span>
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                56 okporo street port Harcourt-River state
-              </span>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
+                
+           
                   Call : +234 08030767523
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  hurawireless@gmail.com
+                Email:  hurawireless@gmail.com
+                </span>
+              </a>
+
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  Office Hours: Monday to Saturday, 8 am to 7 pm
                 </span>
               </a>
             </div>
+          </div>
+
+          <div>
+            <h4>Do more with Hura</h4>
+            <p>Enjoy high-speed internet with our FibreMax Home Extra plan, designed to meet the needs of modern households..</p>
           </div>
           <div class="info_social">
             <a href="">
@@ -2126,7 +2373,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
                 About
               </a>
             
-              <a class="" href="{% url "radio" %}">
+              <a class="" href="{% url "speed" %}">
                 <img src="{% static 'images/nav-bullet.png' %} " alt="">
                 Residential
               </a>
@@ -2143,28 +2390,32 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
             </div>
           </div>
         </div>
+     
+       
         <div class="col-md-3">
           <div class="info_detail">
             <h4>
-              WE Got You covered!
+              COVERAGE AREAS
             </h4>
-            <p>
-              Worry not if anything goes wrong with your Hura service, We’ll sort it out no charge. This excludes misuse & mistreatment- so try not to use your Hura router as a coaster.
-
-
-            </p>
+            <p>Sars Road </p>
+            
+            <p>Elipokwuodu </p>
+          <p>Rukpokwu</p>
+          <p>Rumuaghaolu</p>
+          <p>Rumuodomaya
+          </p>
+          <p>Rumuokoro</p>
+          <p>Ozuoba
+          </p>
+      <p> Mgbuoba </p>
+      <p>Nkpelu, Port-Harcourt,Nigeria. </p>
           </div>
         </div>
-        <div class="col-md-3 mb-0">
-          <h4>
-            Subscribe
-          </h4>
-          <form id="subscribeForm">
-            <input type="text" placeholder="Enter email" id="email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
+        
+        <div>
+        
+          
+       
         </div>
       </div>
     </div>
@@ -2178,7 +2429,7 @@ Enjoy seamless service with our cutting-edge customer support, always ready to a
     <div class="container">
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
-        Ukpono Andem
+      Hura Network
       </p>
     </div>
   </footer>
