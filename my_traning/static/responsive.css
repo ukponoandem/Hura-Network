@@ -1,11 +1,33 @@
-@media (max-width: 1300px) {}
+@media (max-width: 1300px) {
+  .hero_area {
+    min-height: 100vh;
+    height: 100vh;
+  }  
 
-@media (max-width: 1120px) {}
+}
+
+@media (max-width: 1120px) {
+  .hero_area {
+    min-height: 100vh;
+    height: 100vh;
+  }  
+
+}
+
+
+@media (max-width: 782px) {
+  .hero_area {
+    min-height: 100vh;
+    height: 100vh;
+  }  
+
+}
 
 @media (max-width: 992px) {
-  .hero_area {
-    min-height: auto;
-  }
+    .hero_area {
+    min-height: 100vh;
+    height: 100vh;
+  }  
 
   #navbarSupportedContent {
     padding: 15px 0 25px 0;
@@ -22,7 +44,7 @@
   }
 
   .slider_section {
-    padding: 45px 0 90px 0;
+    padding: 25px 0 90px 0;
   }
 
 
@@ -51,7 +73,7 @@
 
 @media (max-width: 768px) {
   .slider_section .detail-box {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     text-align: center;
   }
 
@@ -91,7 +113,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
 
   .info_section .info_links {
@@ -120,7 +142,7 @@
 
 @media (max-width: 1200px) {
   .slider_section .detail-box {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     text-align: center;
   }
 
@@ -129,7 +151,7 @@
   }
 
   .about_section .detail-box {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
   }
 
 
@@ -216,12 +238,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 20px;
 
   }
 
 .why-text{
 text-align: center;
-font-size: 12px;
+font-size: 20px;
 }
 }
 
@@ -376,7 +399,7 @@ font-size: 12px;
 
 @media (max-width: 780px) {
   .slider_section .detail-box {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     text-align: center;
   }
 
@@ -394,7 +417,7 @@ font-size: 12px;
   }
 
   .service_section .service_col_middle .box {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
   }
 
   .server_section {
@@ -408,7 +431,7 @@ font-size: 12px;
 
   .contact_section .form_container {
     margin-right: 0;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
   }
 
   .info_section .row>div {
@@ -457,20 +480,20 @@ font-size: 12px;
 
 @media (max-width: 376px) {
   .slider_section .detail_box h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: 100px;
   }
 }
 
 
 @media (min-width: 780px) {
   .container {
-    max-width: 1170px;
+    max-width: 100px;
   }
 }
 
@@ -480,6 +503,8 @@ font-size: 12px;
     max-width: 1170px;
   }
 }
+
+
 
 @media (max-width: 1200px) {
 
@@ -495,6 +520,14 @@ font-size: 12px;
   .voip_header{
     display: flex;
     flex-direction: column;
+    font-size: 10px;
+  }
+  .slider_section .detail-box h1{
+    font-size: 20px;
+    margin-bottom: 5px;
+
+  }
+  .details-h4{
     font-size: 10px;
   }
 }
@@ -515,7 +548,14 @@ font-size: 12px;
     flex-direction: column;
     font-size: 10px;
   }
-
+  .slider_section .detail-box h1{
+    font-size: 20px;
+    margin-bottom: 5px;
+  
+  }
+  .details-h4{
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -532,6 +572,14 @@ font-size: 12px;
   .voip_header{
     display: flex;
     flex-direction: column;
+    font-size: 10px;
+  }
+  .slider_section .detail-box h1{
+    font-size: 20px;
+    margin-bottom: 5px;
+
+  }
+  .details-h4{
     font-size: 10px;
   }
 }
@@ -551,6 +599,12 @@ font-size: 12px;
   display: flex;
   flex-direction: column;
   font-size: 10px;
+}
+
+.slider_section .detail-box h1{
+  font-size: 30px;
+  margin-bottom: 25px;
+
 }
 /* 
 .scoll_txt{
@@ -658,94 +712,7 @@ text-align: center;
     text-align: center;
   }
 
-  .scroll_btn {
-    max-width:120%;
-    font-size: 10px;
-  }
-  .main1{
-    max-width: 200px;
-    text-align: center;
-  }
-
-
-  .scroll_h1 {
-    font-size: 10px;
-  }
-
-  .scroll_btn h2 {
-    font-size: 10px;
-  }
-
-  .scoll_txt h5{
-    font-size: 10px;
-  }
-  .scoll_txt h1{
-    font-size: 12px;
-  }
-  .scoll_txt h2,
-  .scoll_txt h5,
-  .scoll_txt p{
-font-size: 10px;
-  }
-  .carousel-item {
-    padding: 15px 0;
-  }
-
-  .scroll_txt h1,
-  .scroll_txt h4,
-  .scroll_txt h5 {
-    font-size: 10px;
-  }
-  .scroll_txt {
-    max-width: 60%;
-  }
-
-  .scroll_txt p {
-    font-size: 10px;
-  }
-
-  .scoll_txt h4{
-    font-size: 10px;
-  }
-  .scroll_btn .scroll_p {
-    font-size: 10px;
-  }
-
-  .rows {
-    display: block;
-  }
-}
-
-@media (max-width: 576px) {
-  .scoll_txt {
-    max-width:50%;
-    font-size: 10px;
-    text-align: center;
-  }
-
-  .scroll_btn {
  
-  .scoll_txt h4{
-    font-size: 10px;
-  }
-
-  .detail-boxs {
-    padding: 10px;
-  }
-
-  .img-box {
-    width: 100%;
-  }
-
-  .rows {
-    display: block;
-  }
-
-  .col-md-6s,
-  .col-md-6 {
-    width: 100%;
-    margin-bottom: 20px;
-  }
 }
 
 
@@ -804,7 +771,7 @@ font-size: 10px;
     font-size: 10px;
   }
   .scoll_txt {
-    max-width: 70%;
+    max-width: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -852,7 +819,7 @@ font-size: 10px;
     font-size: 10px;
   }
   .scoll_txt {
-    max-width: 70%;
+    max-width: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -880,6 +847,7 @@ font-size: 10px;
   }
   .hello{
     font-size: 10px;
+    color: white;
   }
   .main_header h1,
   .main_header h2,
@@ -903,7 +871,7 @@ font-size: 10px;
     font-size: 10px;
   }
   .scoll_txt {
-    max-width: 70%;
+    max-width: 100%;
     text-align: center;
   }
 .scoll_txt h1,
@@ -1010,7 +978,7 @@ font-size: 10px;
 .scoll_txt h4,
 .scoll_txt h5,
 .scoll_txt p{
-  font-size: 10px;
+  font-size: 15px;
 }
 .scoll_boxs {
   flex-wrap: wrap; /* Allow items to wrap on medium screens */
@@ -1018,7 +986,57 @@ font-size: 10px;
 
 
 }
+@media (max-width: 950px) {
+.header_h1{
+  font-size: 15px;
+  text-align: center;
+}
+.header-txt h4{
+  font-size:10px ;
+}
 
 
+.hello{
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
+}
 
+@media (max-width: 750px) {
+  .header_h1{
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  
+  .hello{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+  }
 
+  .header-txt h4{
+    font-size:15px ;
+  }
+  
+  }
+
+  @media (max-width: 1200px) {
+    .header_h1{
+      font-size: 15px;
+      text-align: center;
+    }
+    
+    
+    .hello{
+      font-size: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    .header-txt h4{
+      font-size:10px ;
+    }
+    
+    }
