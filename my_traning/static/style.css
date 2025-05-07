@@ -397,7 +397,11 @@ height: 500px;
   text-decoration: underline;
   text-align: center;
 }
-
+.scsoll_txt h1{
+color: white;
+text-align: center;
+text-decoration: underline;
+}
 .scoll_txt{
   color: white;
   text-decoration: underline;
